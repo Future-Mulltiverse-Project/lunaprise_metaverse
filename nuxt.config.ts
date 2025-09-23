@@ -16,4 +16,14 @@ export default defineNuxtConfig({
       extensions: ['.vue'],
     },
   ],
+  runtimeConfig: {
+    public: {
+      APP_NAME: 'Lunaprise Metaverse',
+      APP_TITLE: 'Lunaprise Metaverse',
+      APP_DESCRIPTION: '',
+      API_URL: 'https://multiversemalaw.com/',
+      NUXT_SESSION_PASSWORD: process.env.NUXT_SESSION_PASSWORD || " ",
+   },
+    
+  },
 })
