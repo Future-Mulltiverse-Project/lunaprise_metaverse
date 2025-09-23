@@ -1,0 +1,164 @@
+.btn-outline-primary{
+    background-color: transparent;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: 10px;
+    font-weight: 600;
+    border: #cfb16d solid 3px;
+}
+.card-title{
+    color: #cfb16d;
+}
+.btn-outline-primary-no-spacing{
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border-width: 10px;
+    font-weight: 600;
+    border: #cfb16d solid 3px;
+}
+.btn-white-text:hover{
+    background-color: white !important;
+    color: #cfb16d;
+}
+body{
+    font-family: 'Bai Jamjuree';
+}
+.w_99{
+    width: 97%;
+}
+.text-cfb16d{
+    color: #cfb16d;
+}
+.btn-inline-primary{
+    background-color: #cfb16d;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: 10px;
+    border: #cfb16d solid 3px;
+}
+
+.btn-inline-primary-no-space{
+    background-color: #cfb16d;
+    color: white;
+    text-transform: uppercase;
+    border-width: 10px;
+    border: #cfb16d solid 1px;
+}
+
+.btn-inline-primary-sm{
+    background-color: #cfb16d;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 10px;
+    border: #cfb16d solid 3px;
+}
+.btn-inline-primary:hover{
+    background-color: transparent;
+}
+.gold_text{
+    color: #cfb16d;
+}
+
+
+.nav_left_20_perc{
+    left: -20%;
+}
+
+/*laptop_view*/
+.laptop_nav_min_width{
+    min-width: 1024px;
+    left: auto;
+}
+
+/*laptop_large_view*/
+.laptop_large_nav_min_width{
+    min-width: 1440px;
+    left: auto;
+}
+
+.general_nav_width{
+    min-width: 100vw;
+    left: auto;
+}
+.navigation_image{
+    max-height: 27vw;
+}
+
+.btn_gold_bg_new{
+    border-radius: 15px;
+    border: #cfb16d 3px solid;
+    background-color: #cfb16d;
+    color: white;
+}
+
+.btn_white_bg_new{
+    border-radius: 15px;
+    border: #cfb16d 3px solid;
+    background-color: #ffffff;
+    color: black;
+}
+
+.btn_light_bg_new{
+    border-radius: 15px;
+    border: #cfb16d 4px solid;
+    background-color: #f5ead3;
+    color: black;
+}
+
+.grid-cols-16{
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+}
+
+.text-xsm{
+    font-size: 13px;
+}
+
+/* right after your @tailwind directives, or in a separate file loaded last */
+.authenticated .general_nav_width {
+  /* undo the full‑viewport rule for authenticated users */
+  min-width: 40vmax !important;
+  left: 1%     !important;
+}
+
+@media screen and (min-width: 1500px) {
+  .authenticated .general_nav_width {
+    min-width: 60vw !important;
+    left: -1.4% !important;
+    padding-left: 4% !important;
+    top: 1.7rem !important;
+  }
+  
+}
+
+@media screen and (min-width: 1900px) {
+  .authenticated .general_nav_width {
+    min-width: 50vw !important;
+    left: -1.4% !important;
+    padding-left: 4% !important;
+    top: 1.7rem !important;
+  }
+  
+}
+
+@media screen and (min-width: 2400px) {
+  .authenticated .general_nav_width {
+    min-width: 40vw !important;
+    left: -1.4% !important;
+    padding-left: 4% !important;
+    top: 1.7rem !important;
+  }
+  
+}
