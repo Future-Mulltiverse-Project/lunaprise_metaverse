@@ -38,8 +38,7 @@ async function decrypt(encryptedText: string): Promise<string> {
 }
 
 export async function setSession(token: string) {
-  if (process.server) return; // don’t run this on SSR
-
+  if (process.server) return;
   const encryptedToken = await encrypt(token);
 
   const domain = window.location.hostname.split('.').slice(-2).join('.');

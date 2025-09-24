@@ -123,7 +123,7 @@
               </button>
             </div>
             <div
-              class="flex pt-4 sm:pt-0 justify-center md:justify-start items-center"
+              class="flex justify-center md:justify-start items-center"
             >
               <button
                 class="btn btn-outline-primary rounded-[10px] btn-white-text text-sm border-2 px-6 border-gold-light py-4 lg:py-5"
@@ -200,7 +200,7 @@ const handleOnboard = async (): Promise<void> => {
     callback_uri:
       `${window.location.origin}` ||
       'http://localhost:3000',
-    source_platform: 'multiverse_malawi',
+    source_platform: 'lunaprise_metaverse',
   };
 
   try {
@@ -222,7 +222,7 @@ const handleOnboard = async (): Promise<void> => {
       console.log(onboardResponse);
 
       if (onboardResponse.status == 1) {
-        window.location.href = `http://localhost:8016/?source_platform=${requestData.source_platform}&request=${onboardResponse.data.reference}&sponsor=FCL-QW3RTY`;
+        window.location.href = `https://auth.futuremultiverse.com/?source_platform=${requestData.source_platform}&request=${onboardResponse.data.reference}&sponsor=FCL-QW3RTY`;
       } else {
         console.error('Missing reference in response');
       }
