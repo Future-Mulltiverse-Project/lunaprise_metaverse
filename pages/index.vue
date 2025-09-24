@@ -85,7 +85,7 @@
             ENTER<span class="text-white"> & </span>EXPERIENCE <span class="text-white"><span>&nbsp;</span>THE </span>
           </p>
           <p class="text-5xl lg:text-[5.2rem] leading-[1.1] tracking-wide">LUNAPRISE</p>
-          <p class="text-white text-5xl lg:text-[5rem] leading-[1.1]">METAVERSE</p>
+          <p class="text-white text-5xl lg:text-[5rem] leading-[1.1] lg:tracking-wide">METAVERSE</p>
         </div>
 
         <div class="space-y-4 2xl:space-y-6 justify-center">
