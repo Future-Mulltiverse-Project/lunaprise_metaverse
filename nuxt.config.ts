@@ -106,10 +106,6 @@ export default defineNuxtConfig({
             href: 'https://fonts.gstatic.com',
             crossorigin: '',
           },
-          {
-            rel: 'stylesheet',
-            href: 'https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap',
-          },
         ],
         script: [
           { src: "https://unpkg.com/feather-icons", defer: true }
