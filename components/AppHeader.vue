@@ -88,26 +88,6 @@
 													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
 													<div
 														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-														<FutureIcon class="p-1 w-8 h-auto ml-0" />
-													</div>
-													<div class="pl-3">
-														<NuxtLink to="https://www.futuremultiverse.dev/welcome_and_overview">
-															<p
-																class="text-sm font-medium text-white group-hover:text-gold-light">
-																Welcome
-															</p>
-															<p
-																class="text-xs text-gray-400 group-hover:text-white">
-																Overview & Examples
-															</p>
-														</NuxtLink>
-													</div>
-												</div>
-
-												<div
-													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-													<div
-														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
 														<EnterFutureIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
@@ -119,6 +99,25 @@
 															<p
 																class="text-xs text-gray-400 group-hover:text-white">
 																In the Multiverse
+															</p>
+														</NuxtLink>
+													</div>
+												</div>
+												<div
+													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
+													<div
+														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
+														<FutureIcon class="p-1 w-8 h-auto ml-0" />
+													</div>
+													<div class="pl-3">
+														<NuxtLink to="/">
+															<p
+																class="text-sm font-medium text-white group-hover:text-gold-light">
+																Welcome
+															</p>
+															<p
+																class="text-xs text-gray-400 group-hover:text-white">
+																Overview
 															</p>
 														</NuxtLink>
 													</div>
@@ -150,10 +149,30 @@
 													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
 													<div
 														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
+														<SearchHeaderIcon class="p-1 w-8 h-auto ml-0" />
+													</div>
+													<div class="pl-3">
+														<NuxtLink
+															to="https://guidebook.lunaprisemetaverse.com">
+															<p
+																class="text-sm font-medium text-white group-hover:text-gold-light">
+																Lunaprise GuideBook
+															</p>
+															<p
+																class="text-xs text-gray-400 group-hover:text-white">
+																Your AI Based Future Guide
+															</p>
+														</NuxtLink>
+													</div>
+												</div>
+												<div
+													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
+													<div
+														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
 														<ProductsServicesIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
-														<NuxtLink to="https://www.futuremultiverse.dev/products_and_services">
+														<NuxtLink to="https://www.lunaprisemetaverse.com/products_and_services">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
 																Products & Services
@@ -173,7 +192,7 @@
 													</div>
 													<div class="pl-3">
 														<NuxtLink
-															to="https://guidebook.futuremultiverse.com/">
+															to="https://www.spaceblue.club">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
 																Lunaprise Museum
@@ -181,26 +200,6 @@
 															<p
 																class="text-xs text-gray-400 group-hover:text-white">
 																First Timecapsule on the Moon
-															</p>
-														</NuxtLink>
-													</div>
-												</div>
-												<div
-													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-													<div
-														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-														<SearchHeaderIcon class="p-1 w-8 h-auto ml-0" />
-													</div>
-													<div class="pl-3">
-														<NuxtLink
-															to="https://guidebook.futuremultiverse.com/">
-															<p
-																class="text-sm font-medium text-white group-hover:text-gold-light">
-																Lunaprise GuideBook
-															</p>
-															<p
-																class="text-xs text-gray-400 group-hover:text-white">
-																Your AI Based Future Guide
 															</p>
 														</NuxtLink>
 													</div>
@@ -330,7 +329,7 @@
 														<BlockchainIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
-														<NuxtLink to="/">
+														<NuxtLink to="https://guidebook.futuremultiverse.com">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
 																Blockchain
@@ -385,7 +384,7 @@
 														<ConnectIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
-														<NuxtLink to="mission_and_movement">
+														<NuxtLink to="https://www.spaceblue.club">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
 																Space Blue, Artists, Partners
@@ -404,7 +403,7 @@
 														<ConnectIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
-														<NuxtLink to="mission_and_movement">
+														<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
 																Press, Media & Community
@@ -442,7 +441,7 @@
 														<FutureTrendsIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
-														<NuxtLink to="/">
+														<NuxtLink to="https://www.futuretrendsmatrix.com">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
 																Future Trends Group
@@ -462,7 +461,7 @@
 													</div>
 													<div class="pl-3">
 														<NuxtLink
-															to="https://guidebook.futuremultiverse.com">
+															to="https://guidebook.lunaprisemetaverse.com">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
 																In A Nutshell (LinkTree)
@@ -506,7 +505,7 @@
 														src="~/assets/images/drop_menu/graceai.png" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="/">
+													<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
 														<p class="text-sm font-medium dark:text-white">
 															GraceAI
 														</p>
@@ -528,7 +527,7 @@
 														src="~/assets/images/drop_menu/guidebook.png" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="https://guidebook.futuremultiverse.com">
+													<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
 														<p class="text-sm font-medium dark:text-white">
 															GuideBook
 														</p>
@@ -660,25 +659,6 @@
 												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
 												<div
 													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-													<FutureIcon class="p-1 w-8 h-auto ml-0" />
-												</div>
-												<div class="pl-3">
-													<NuxtLink to="https://www.futuremultiverse.dev/welcome_and_overview">
-														<p
-															class="text-sm font-bold text-gray-700 dark:text-white group-hover:text-gold-light">
-															Welcome
-														</p>
-														<p
-															class="text-xs text-gray-400 group-hover:text-white">
-															Overview & Examples
-														</p>
-													</NuxtLink>
-												</div>
-											</div>
-											<div
-												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-												<div
-													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
 													<EnterFutureIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
@@ -690,6 +670,25 @@
 														<p
 															class="text-xs text-gray-400 group-hover:text-white">
 															In the Multiverse
+														</p>
+													</NuxtLink>
+												</div>
+											</div>
+											<div
+												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
+												<div
+													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
+													<FutureIcon class="p-1 w-8 h-auto ml-0" />
+												</div>
+												<div class="pl-3">
+													<NuxtLink to="/">
+														<p
+															class="text-sm font-bold text-gray-700 dark:text-white group-hover:text-gold-light">
+															Welcome
+														</p>
+														<p
+															class="text-xs text-gray-400 group-hover:text-white">
+															Overview
 														</p>
 													</NuxtLink>
 												</div>
@@ -720,10 +719,30 @@
 												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
 												<div
 													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
+													<SearchHeaderIcon class="p-1 w-8 h-auto ml-0" />
+												</div>
+												<div class="pl-3">
+													<NuxtLink
+														to="https://guidebook.lunaprisemetaverse.com">
+														<p
+															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
+															Lunaprise GuideBook
+														</p>
+														<p
+															class="text-xs text-gray-400 group-hover:text-white">
+															Your AI Based Future Guide
+														</p>
+													</NuxtLink>
+												</div>
+											</div>
+											<div
+												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
+												<div
+													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
 													<ProductsServicesIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="products_and_services">
+													<NuxtLink to="https://www.lunaprisemetaverse.com/products_and_services">
 														<p
 															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
 															Products & Services
@@ -742,7 +761,7 @@
 													<StarIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="https://guidebook.futuremultiverse.com">
+													<NuxtLink to="https://www.spaceblue.club">
 														<p
 															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
 															Lunaprise Museum
@@ -750,26 +769,6 @@
 														<p
 															class="text-xs text-gray-400 group-hover:text-white">
 															First Timecapsule on the Moon
-														</p>
-													</NuxtLink>
-												</div>
-											</div>
-											<div
-												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-												<div
-													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-													<SearchHeaderIcon class="p-1 w-8 h-auto ml-0" />
-												</div>
-												<div class="pl-3">
-													<NuxtLink
-														to="https://guidebook.futuremultiverse.com/">
-														<p
-															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
-															Lunaprise GuideBook
-														</p>
-														<p
-															class="text-xs text-gray-400 group-hover:text-white">
-															Your AI Based Future Guide
 														</p>
 													</NuxtLink>
 												</div>
@@ -907,7 +906,7 @@
 													<FutureIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="future_studios">
+													<NuxtLink to="https://www.futuremultiverse.dev/future_studios">
 														<p
 															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
 															Future Studios
@@ -945,7 +944,7 @@
 													<BlockchainIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="/">
+													<NuxtLink to="https://guidebook.futuremultiverse.com">
 														<p
 															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
 															Blockchain
@@ -1048,7 +1047,7 @@
 													<ConnectIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="https://www.futuremultiverse.dev/mission_and_movement">
+													<NuxtLink to="https://www.spaceblue.club">
 														<p
 															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
 															Space Blue, Artists, Partners
@@ -1067,7 +1066,7 @@
 													<ConnectIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="https://guidebook.futuremultiverse.com">
+													<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
 														<p
 															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
 															Press, Media & Community
@@ -1127,7 +1126,7 @@
 													<AcadamyIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="https://guidebook.futuremultiverse.com">
+													<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
 														<p
 															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
 															In A Nutshell (LinkTree)
@@ -1263,7 +1262,7 @@
 														src="~/assets/images/drop_menu/guidebook.png" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="https://guidebook.futuremultiverse.com">
+													<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
 														<p
 															class="text-base text-gray-700 font-bold group-hover:text-gold-light">
 															GuideBook
@@ -1287,7 +1286,7 @@
 														src="~/assets/images/drop_menu/graceai.png" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="/">
+													<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
 														<p
 															class="text-base text-gray-700 font-bold group-hover:text-gold-light">
 															GraceAI
