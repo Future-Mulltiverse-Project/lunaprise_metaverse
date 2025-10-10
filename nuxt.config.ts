@@ -22,7 +22,6 @@ export default defineNuxtConfig({
       APP_TITLE: 'Lunaprise Metaverse',
       APP_DESCRIPTION: '',
       API_URL: 'https://multiversemalaw.com/',
-      NUXT_SESSION_PASSWORD: process.env.NUXT_SESSION_PASSWORD || " ",
    },
     
   },

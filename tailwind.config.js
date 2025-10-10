@@ -91,7 +91,9 @@ export default {
         'bai-jamjuree': [
           'Bai Jamjuree',
           'sans-serif' 
-        ]
+        ],
+		'instrument-serif': ['Instrument Serif', 'serif'],
+        satoshi: ['Satoshi', 'sans-serif'],
       },
   	}
   },
