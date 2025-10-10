@@ -2,7 +2,6 @@
 	<div v-if="futureMultiverseName">
 		<div :class="$style.main">
 			<div :class="$style.bg">
-				<AppHeader class="flex justify-center items-center text-white" />
 				<div
 					:class="$style.el"
 					class="grid grid-cols-1 sm:pb-20 pb-20 gap-2 h-svh">
@@ -68,14 +67,10 @@
 					</div>
 				</div>
 			</div>
-
-			<AppFooter />
 		</div>
 	</div>
 
 	<div :class="$style.main" class="h-screen" v-else>
-		<AppHeader class="flex justify-center items-center" />
-
 		<div :class="$style.bg" class="h-svh flex justify-center items-center">
 			<div class="space-y-8 sm:space-y-10 3xl:space-y-20 mt-10 lg:mt-28">
 				<div
@@ -145,8 +140,6 @@
 				</div>
 			</div>
 		</div>
-
-		<AppFooter />
 	</div>
 </template>
 
