@@ -141,14 +141,12 @@
           class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4 text-lg"
         >
           <NuxtLink to=""  @click.prevent="$emit('goToPricing')"
-            class="bg-[#cfb16d] p-2 cursor-pointer"
-            style="border-radius: 15px; border: #cfb16d solid 3px"
+            class="bg-[#cfb16d] p-2 cursor-pointer text-white rounded-lg border border-gold-light"
           >
             Product & Service Packages
           </NuxtLink>
           <div
-            class="text-lg p-2 text-white bg-custom-dark cursor-pointer"
-            style="border-radius: 15px; border: #cfb16d solid 3px"
+            class="text-lg p-2 text-custom-dark bg-white cursor-pointer rounded-lg boreder-2 border-gold-light"
           >
             Learn More
           </div>
@@ -159,23 +157,20 @@
 </template>
 
 <script lang="ts" setup>
-import bgImage from '~/assets/images/Home/background1.png';
+import bgImage from '~/assets/images/background1.png';
 import axios from 'axios';
-import Faq1 from '~/assets/images/Home/faq1.jpg';
+import Faq1 from '~/assets/images/faq1.jpg';
 import { onMounted, ref } from 'vue';
 import lottie from 'lottie-web';
 import type { AnimationItem } from 'lottie-web';
 import AppWrapper from '~/components/AppWrapper/ProductsAppWrapper.vue';
-import img1 from '~/assets/images/Home/packages/people/teamOne.jpg';
-import img2 from '~/assets/images/Home/packages/people/teamTwo.jpg';
-import img3 from '~/assets/images/Home/packages/people/teamThree.jpg';
-import img4 from '~/assets/images/Home/packages/people/teamFour.jpg';
-import img5 from '~/assets/images/Home/packages/people/teamFive.jpg';
+import img2 from '~/assets/images/teamTwo.jpg';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import TeamSlider from './PackageSliders/TeamSlider.vue';
-import Simon from '~/assets/images/Home/simon.jpeg';
-import Power from '~/assets/images/card_images/7.jpg';
-import BotswanaTeam from '~/assets/images/card_images/botswanaTeam.jpeg';
+import TeamSlider from './TeamSlider.vue';
+import Simon from '~/assets/images/simon.jpeg';
+import Power from '~/assets/images/7.jpg';
+import BotswanaTeam from '~/assets/images/botswanaTeam.jpeg';
+import teamMembers from '~/assets/images/team.jpg';
 
 interface AccordionItemType {
   id: string;
@@ -187,8 +182,9 @@ const config = useRuntimeConfig();
 const baseURL = config.public.baseURL;
 
 const team = [
-  { title: "Stefanie & Simon", description: "Founders of Future Catalyst & Multiverse", image: Simon },
+  { title: "Space Blue, Being Investments & Future Trends Multiverse", description: "", image: teamMembers },
   { title: "Simon, Stefanie & Farzam", description: "Founders & Chairs of Future Trends Multiverse", image: img2 },
+  { title: "Stefanie & Simon", description: "Founders of Future Catalyst & Multiverse", image: Simon },
   { title: "Power-Team of 250+", description: "Core, Design, DEV, PR, Marketing/Sales, Administration, Support & Compliance", image: Power },
   { title: "Multiverse Botswana", description: "Presindential Envoy Core Team", image: BotswanaTeam },
   { title: "Presidential Task Force", description: "Future Trends Implementation Catalysts", image: BotswanaTeam },

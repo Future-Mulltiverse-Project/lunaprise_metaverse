@@ -15,8 +15,8 @@
     <WelcomeToFuture @goToPricing="goToSection = 'pricing'" />
     <ResultsProductsAndPackages @goToPricing="goToSection = 'pricing'" />
     <ExamplesProductsAndPackages @goToPricing="goToSection = 'pricing'" />
-    <!-- <SupportExampleSection :goToSection="goToSection" @sectionNavigated="goToSection = null" />
-    <Team @goToPricing="goToSection = 'pricing'" /> -->
+    <SupportExampleSection :goToSection="goToSection" @sectionNavigated="goToSection = null" />
+    <Team @goToPricing="goToSection = 'pricing'" />
   </section>
 </template>
 
@@ -26,8 +26,8 @@ import PartnersProductsAndPackages from '~/components/PartnersProductsAndPackage
 import WelcomeToFuture from '~/components/WelcomeToFuture.vue';
 import ResultsProductsAndPackages from '~/components/ResultsProductsAndPackages.vue';
 import ExamplesProductsAndPackages from '~/components/ExamplesProductsAndPackages.vue';
-// import SupportExampleSection from '~/components/SupportExampleSection.vue';
-// import Team from '~/components/team.vue';
+import SupportExampleSection from '~/components/SupportExampleSection.vue';
+import Team from '~/components/team.vue';
 import { ref } from "vue";
 
 const isChecking = ref(false);

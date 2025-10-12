@@ -9,28 +9,16 @@
             style="border-width: 3px"
           >
             <button
-              @click="setActiveSection('solutions')"
+              @click="setActiveSection('ecosystem')"
               :class="[
                 'text-xl p-1 max-lg:text-sm lg:px-2',
-                activeSection === 'solutions'
+                activeSection === 'ecosystem'
                   ? 'bg-white shadow-sm border border-[#cfb16d]'
                   : 'text-gray-700 border-none',
               ]"
               style="border-radius: 0.7rem; border-width: 3px"
             >
-              Solutions
-            </button>
-            <button
-              @click="setActiveSection('comparison')"
-              :class="[
-                'text-xl p-1 max-lg:text-sm lg:px-2',
-                activeSection === 'comparison'
-                  ? 'bg-white shadow-sm border border-[#cfb16d]'
-                  : 'text-gray-700 border-none',
-              ]"
-              style="border-radius: 0.7rem; border-width: 3px"
-            >
-              Comparison
+              EcoSystem
             </button>
             <button
               @click="setActiveSection('process')"
@@ -61,24 +49,24 @@
       </section>
 
       <!-- Sections -->
-      <section v-show="activeSection === 'solutions'" class="space-y-8">
+      <section v-show="activeSection === 'ecosystem'" class="space-y-8">
         <div class="text-center space-y-8 mx-auto bg-white">
           <h1 class="text-black text-center text-[3rem] lg:text-6xl">
-            How may we support
+            Explore our
             <span
               class="text-[#cfb16d] font-instrument-serif italic font-normal"
             >
-              you
-              <span class="text-gray-800">?</span>
+              Ecosystem
+              <span class="text-gray-800">:</span>
             </span>
           </h1>
 
           <p
             class="text-center text-[#707070] text-md lg:text-xl max-w-[36rem] mx-auto"
           >
-            Our Future Trends Multiverse System offers you everything you need
-            to transform your brand into a future-proof leader of the rapidly
-            developing world of tomorrow and the pioneering movement behind it.
+            Our Lunaprise Metaverse offers you everything you need to
+            transform into a future-proof leader of the rapidly developing world
+            of tomorrow and the pioneering movement behind it.
           </p>
         </div>
 
@@ -88,40 +76,43 @@
             class="relative bg-cover bg-center rounded-2xl border-4 border-[#cfb16d] p-8 text-white cursor-pointer hover:scale-105 transition-transform duration-300"
             :style="{ backgroundImage: `url(${Bg1})` }"
           >
+           <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-black bg-opacity-10 rounded-2xl"
+            ></div>
             <div
               class="flex justify-center items-center h-full rounded-2xl py-12"
             >
               <div class="text-center space-y-8">
                 <h1 class="text-2xl sm:text-4xl font-bold mb-2">
-                  Future Multiverse
+                  Lunaprise Metaverse
                 </h1>
-                <p class="text-sm sm:text-lg max-w-[32rem]">
-                  The Future Multiverse & FXPO is a Hyper-Realistic, digital &
-                  decentralized eco-system, harnessing cutting edge technology
-                  to accelerate the economy of the Future.
+                <p class="text-sm  max-w-[32rem]">
+                  The Lunaprise Metaverse is a multidimensional Web4 ecosystem merging space innovation, XR, AI, & blockchain 
+                  to bridge Earth, Moon, Mars, and the Multiverse.
                 </p>
               </div>
             </div>
           </div>
 
           <div
-            @click="navigateTo('mission_and_movement')"
             class="relative bg-cover bg-center rounded-2xl border-4 border-[#cfb16d] p-8 text-white cursor-pointer hover:scale-105 transition-transform duration-300"
-            :style="{ backgroundImage: `url(${Bg5})` }"
+            :style="{ backgroundImage: `url(${Bg6})` }"
           >
+            <!-- Overlay -->
             <div
-              class="flex justify-center items-center h-full rounded-2xl py-12"
+              class="absolute inset-0 bg-black bg-opacity-40 rounded-2xl"
+            ></div>
+            <div
+              class="relative z-10 flex justify-center items-center h-full rounded-2xl py-12"
             >
               <div class="text-center space-y-8">
                 <h1 class="text-2xl sm:text-4xl font-bold mb-2">
-                  Mission & Movement
+                  Future Trends Multiverse
                 </h1>
-                <p class="text-sm sm:text-lg max-w-[32rem]">
-                  The Future Multiverse is a multi-dimensional eco-system
-                  created to be a catalyst for humanity's destined future.
-                  Catalyzing the Future Trends Groups' network & influence in
-                  150+ countries, we are empowering the most meaningful movement
-                  in history.
+                <p class="text-sm max-w-[32rem]">
+                  The Future Multiverse & FXPO is a Hyper-Realistic, digital & decentralized eco-system, harnessing cutting edge technology 
+                  to accelerate the economy of the Future.
                 </p>
               </div>
             </div>
@@ -138,13 +129,13 @@
               >
                 <div class="text-center space-y-8">
                   <h1 class="text-2xl sm:text-4xl font-bold mb-2">
-                    Launch Pad
+                    LaunchPad
                   </h1>
-                  <p class="text-sm sm:text-lg">
+                  <p class="text-sm">
                     The Future Trends Catalyst LaunchPad - your state of the art
                     platform to catalyze project funding or invest in assets.
                   </p>
-                  <p class="text-sm sm:text-lg">
+                  <p class="text-sm">
                     “The Future isn’t limited by space or time, only by our
                     imagination. Anything you can imagine, can be built. And
                     everything that can be built, can be funded”.
@@ -165,11 +156,11 @@
                   <h1 class="text-2xl sm:text-4xl font-bold mb-2">
                     Marketplace
                   </h1>
-                  <p class="text-sm sm:text-lg">
+                  <p class="text-sm">
                     The Future Trends Catalyst Marketplace - Your ultimate
                     gateway to enter the world of Web4 and the digital future.
                   </p>
-                  <p class="text-sm sm:text-lg">
+                  <p class="text-sm">
                     “Discover the limitless possibilities of the future, at the
                     FXPO Marketplace. Where passion meets purpose and values
                     create opportunities.”
@@ -177,33 +168,6 @@
                 </div>
               </div>
             </NuxtLink>
-          </div>
-
-          <div
-            class="relative bg-cover bg-center rounded-2xl border-4 border-[#cfb16d] p-8 text-white cursor-pointer hover:scale-105 transition-transform duration-300"
-            :style="{ backgroundImage: `url(${P1})` }"
-          >
-            <!-- Overlay -->
-            <div
-              class="absolute inset-0 bg-black bg-opacity-40 rounded-2xl"
-            ></div>
-            <div
-              class="relative z-10 flex justify-center items-center h-full rounded-2xl py-12"
-            >
-              <div class="text-center space-y-8">
-                <h1 class="text-2xl sm:text-4xl font-bold mb-2">
-                  Advanced Future
-                  <br />
-                  Technologies
-                </h1>
-                <p class="text-sm sm:text-lg max-w-[32rem]">
-                  The Future Multiverse & EXPO is accelerating an international
-                  portfolio of groundbreaking technologies across multiple
-                  industries, scaling their institutional, governmental,
-                  academic, public & mass adoption
-                </p>
-              </div>
-            </div>
           </div>
 
           <div
@@ -216,107 +180,12 @@
             >
               <div class="text-center space-y-8">
                 <h1 class="text-2xl sm:text-4xl font-bold mb-2">
-                  Product & Service Packages
+                  Our Offers for You
                 </h1>
-                <p class="text-sm sm:text-lg max-w-[32rem]">
-                  Business & Design Packages, incl. the FMV Passport,
-                  Hyper-Realistic Avatars, Multi-Functional Business Space,
-                  Platform Revenue Share Opportunities, Any-Dimensionsional
-                  Custom Design Services, Marketing Licences, Apparel & much
-                  more
+                <p class="text-sm max-w-[32rem]">
+                  Lunaprise Metaverse Memberships & Experience / Event Tickets,Hyper-Real Avatars, Immersive XR Spaces & Experiences, Lunar Art & Asset NFTs, Multi-functional Business Space, Custom Design Services, Eco-System Revenue Opportunities, Custom Design Services, Exclusive Limited Experiences,Marketing Licences, Apparel & much more.
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div
-            class="relative bg-cover bg-center rounded-2xl border-4 border-[#cfb16d] p-8 pb-0 text-white cursor-pointer hover:scale-105 transition-transform duration-300"
-            :style="{ backgroundImage: `url(${Bg6})` }"
-          >
-            <!-- Header Section -->
-            <div class="text-center mb-8">
-              <h1 class="text-2xl sm:text-4xl font-bold mb-4">
-                Download the
-                <span class="text-[#cfb16d]">Future</span>
-                <br />
-                &
-                <span class="text-[#cfb16d]">Connect</span>
-                Today
-              </h1>
-            </div>
-
-            <!-- Content Section -->
-            <div
-              class="flex flex-col md:flex-row justify-between items-center md:space-y-0 md:space-x-4 relative z-10 max-w-[40rem] mx-auto overflow-hidden"
-            >
-              <!-- Image Section -->
-              <div class="relative w-full flex justify-start overflow-hidden">
-                <img
-                  :src="currentPhoneImage"
-                  alt="Phone Preview"
-                  class="w-full h-full object-contain translate-y-[1rem]"
-                />
-              </div>
-              <!-- Buttons Section - desktop version -->
-              <div
-                class="grid gap-4 w-full md:w-1/2 justify-end items-center max-lg:pb-4 max-md:hidden"
-              >
-                <button
-                  class="bg-white text-gray-700 py-2 px-3 w-56 hover:bg-gray-200 rounded-full border-4 border-[#cfb16d] text-md inline-block"
-                >
-                  <img :src="Apple" alt="Apple" class="inline w-5 h-5 mr-3" />
-                  <span>App Store</span>
-                </button>
-                <button
-                  class="bg-white text-gray-700 py-2 px-3 w-56 hover:bg-gray-200 rounded-full border-4 border-[#cfb16d] text-md inline-block"
-                >
-                  <img
-                    :src="PlayStore"
-                    alt="Playstore"
-                    class="inline w-5 h-5 mr-3"
-                  />
-                  <span>Play Store</span>
-                </button>
-                <button
-                  class="bg-white text-gray-700 py-2 px-3 w-56 hover:bg-gray-200 rounded-full border-4 border-[#cfb16d] text-md inline-block"
-                >
-                  <img :src="Future" alt="future" class="inline w-5 h-5 mr-3" />
-                  <span>GuideBook</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full hidden justify-center max-md:flex">
-            <div
-              class="grid gap-4 w-full md:w-1/2 justify-items-center space-y-4"
-            >
-              <button
-                class="bg-white text-gray-700 py-2 px-2 w-48 text-lg hover:bg-gray-200 rounded-full border-4 border-[#cfb16d] inline-block"
-              >
-                <img :src="Apple" alt="Apple" class="inline w-5 h-5 mr-3" />
-                <span>App Store</span>
-              </button>
-              <button
-                class="bg-white text-gray-700 hover:bg-gray-200 rounded-full border-4 border-[#cfb16d] inline-block py-2 px-2 w-48 text-lg"
-              >
-                <img
-                  :src="PlayStore"
-                  alt="Playstore"
-                  class="inline w-5 h-5 mr-3"
-                />
-                <span>Play Store</span>
-              </button>
-              <button
-                class="bg-white text-gray-700 mb-8 hover:bg-gray-200 rounded-full border-4 border-[#cfb16d] inline-block py-2 px-2 w-48 text-lg"
-              >
-                <img
-                  :src="Future"
-                  alt="Playstore"
-                  class="inline w-5 h-5 mr-3"
-                />
-                <span>GuideBook</span>
-              </button>
             </div>
           </div>
         </div>
@@ -411,18 +280,18 @@
           <h1 class="text-black text-center text-[3.5rem] lg:text-6xl">
             Our Streamlined Process
             <br />
-            for rapid
+            for your
             <span
               class="text-[#cfb16d] font-instrument-serif italic font-normal"
             >
-              transformation
+              SuperHero Journey
             </span>
             :
           </h1>
 
           <div class="w-full flex justify-center">
             <p
-              class="max-w-[590px] text-center text-[#707070] text-md lg:text-xl mx-auto"
+              class="max-w-[590px] text-center text-[#707070] text-md lg:text-lg mx-auto"
             >
               Our Future Trends Multiverse System equips you with all the tools
               to rapidly transform your brand into a future-proof powerhouse—
@@ -436,9 +305,11 @@
         >
           <div class="bg-white p-6 text-center">
             <div class="flex justify-center w-full">
+              <client-only>
               <div ref="fingerprint" class="w-16 h-16 mx-auto mb-4"></div>
               <div ref="metaverse" class="w-16 h-16 mx-auto mb-4"></div>
               <div ref="astronautSuit" class="w-16 h-16 mx-auto mb-4"></div>
+              </client-only>
             </div>
             <h3 class="text-xl lg:text-2xl mb-2 text-black">
               Onboard / Connect
@@ -543,14 +414,12 @@
         <NuxtLink
           to=""
           @click="setActiveSection('pricing')"
-          class="bg-[#cfb16d] p-2 cursor-pointer"
-          style="border-radius: 15px; border: #cfb16d solid 3px"
+          class="bg-[#cfb16d] p-2 cursor-pointer rounded-lg text-white"
         >
-          Product & Service Packages
+          Our Offer for You
         </NuxtLink>
         <div
-          class="text-lg p-2 text-black bg-white cursor-pointer"
-          style="border-radius: 15px; border: #cfb16d solid 3px"
+          class="text-lg p-2 text-black bg-white cursor-pointer rounded-lg border-2 border-gold-light"
         >
           Learn More
         </div>
@@ -565,44 +434,19 @@ import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { watch, nextTick } from 'vue';
 
-import PlatformsAndServicesSection from '~/components/Sections/PlatformsAndServicesSection.vue';
-import Bg1 from '~/assets/images/Home/bg1.png';
-import Bg2 from '~/assets/images/Home/bg2.jpg';
-import Bg3 from '~/assets/images/Home/bg3.jpg';
-import Bg4 from '~/assets/images/Home/bg4.png';
-import Bg5 from '~/assets/images/Home/bg5.jpg';
-import Bg6 from '~/assets/images/Home/bg6.png';
-import Phone1 from '~/assets/images/Home/phone1.png';
-import Phone2 from '~/assets/images/Home/phone2.png';
-import Apple from '~/assets/images/Home/apple.png';
-import PlayStore from '~/assets/images/Home/appstore.svg';
-import Future from '~/assets/images/Home/future.png';
-import bgImage from '~/assets/images/Home/background1.png';
-
-import P1 from '~/assets/images/Home/p1.jpg';
-import P2 from '~/assets/images/Home/p2.jpg';
-import P3 from '~/assets/images/Home/p3.jpg';
-import P4 from '~/assets/images/Home/p4.jpg';
-import P5 from '~/assets/images/Home/p5.jpg';
-import P6 from '~/assets/images/Home/p66.jpg';
-import Faq1 from '~/assets/images/Home/faq1.jpg';
+import PlatformsAndServicesSection from '~/components/PlatformsAndServicesSection.vue';
+import Bg1 from '~/assets/images/lunaprise-cape.png';
+import Bg2 from '~/assets/images/bg2.jpg';
+import Bg3 from '~/assets/images/bg3.jpg';
+import Bg4 from '~/assets/images/bg4.png';
+import Bg6 from '~/assets/images/bg6.png';
+import Future from '~/assets/images/future_icon.png';
 import { onMounted } from 'vue';
-import lottie from 'lottie-web';
-import type { AnimationItem } from 'lottie-web';
-import AppWrapper from '~/components/AppWrapper/ProductsAppWrapper.vue';
-import img1 from '~/assets/images/Home/packages/people/teamOne.jpg';
-import img2 from '~/assets/images/Home/packages/people/teamTwo.jpg';
-import img3 from '~/assets/images/Home/packages/people/teamThree.jpg';
-import img4 from '~/assets/images/Home/packages/people/teamFour.jpg';
-import img5 from '~/assets/images/Home/packages/people/teamFive.jpg';
-
-// Array for images
-const images = ref([img1, img2, img3, img5, img1, img2, img3, img5]);
 
 const slider = ref<HTMLElement | null>(null);
 
 // Reactive state for active section
-const activeSection = ref('solutions');
+const activeSection = ref('ecosystem');
 const route = useRoute();
 
 // Function to set the active section
@@ -667,19 +511,6 @@ onMounted(() => {
     }
   };
 
-  animateSlider(slider.value);
-  animationsMap.forEach(({ ref, path }) => {
-    if (ref.value) {
-      lottie.loadAnimation({
-        container: ref.value,
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: `/json/${path}`,
-      });
-    }
-  });
-
   if (route.query.section === 'pricing') {
     activeSection.value = 'pricing';
   }
@@ -700,20 +531,4 @@ watch(
     }
   },
 );
-
-const currentPhoneImage = ref(Phone1);
-
-function setInitialImage() {
-  if (window.innerWidth > 1200) {
-    currentPhoneImage.value = Phone1;
-  } else if (window.innerWidth > 768 && window.innerWidth < 1200) {
-    currentPhoneImage.value = Phone1;
-  }
-}
-
-window.addEventListener('resize', setInitialImage);
-
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', setInitialImage);
-});
 </script>

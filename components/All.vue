@@ -60,8 +60,8 @@
               >
                 <div class="flex aspect-square items-end justify-center w-full">
                   <div class="bg-black bg-opacity-40 w-full p-4" style="border-bottom-left-radius: 13px; border-bottom-right-radius: 13px;">
-                    <p class="text-xl text-white font-semibold text-center">{{ card.name }}</p>
-                    <p class="text-sm text-white font-semibold text-center">{{ card.description }}</p>
+                    <p class="text-xl text-white text-center">{{ card.name }}</p>
+                    <p class="text-sm text-white text-center">{{ card.description }}</p>
 
                     <div class="flex flex-row  space-x-4  justify-center items-center text-lg mt-4">
                       <div class="bg-[#cfb16d] sm:text-sm text-xs p-2 cursor-pointer" style="border-radius: 12px; border: #CFB16D solid 3px;">
