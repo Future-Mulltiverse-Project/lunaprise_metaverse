@@ -17,6 +17,8 @@ export default defineNuxtConfig({
     },
   ],
   runtimeConfig: {
+    apiToken: process.env.apiToken,
+    baseURL: process.env.NUXT_BASE_URL,
     public: {
       APP_NAME: 'Lunaprise Metaverse',
       APP_TITLE: 'Lunaprise Metaverse',
