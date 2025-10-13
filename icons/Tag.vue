@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img :scr="Icon" alt="" class="w-2 h-2"/>
+        <img :src="Icon" alt="" class="w-4 h-4 mr-2"/>
     </div>
 </template>
 <script setup>

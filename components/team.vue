@@ -141,12 +141,12 @@
           class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4 text-lg"
         >
           <NuxtLink to=""  @click.prevent="$emit('goToPricing')"
-            class="bg-[#cfb16d] p-2 cursor-pointer text-white rounded-lg border border-gold-light"
+            class="bg-[#cfb16d] p-2 cursor-pointer text-white rounded-lg border-2 border-gold-light"
           >
             Product & Service Packages
           </NuxtLink>
           <div
-            class="text-lg p-2 text-custom-dark bg-white cursor-pointer rounded-lg boreder-2 border-gold-light"
+            class="text-lg p-2 text-custom-dark bg-white cursor-pointer rounded-lg border-2 border-gold-light"
           >
             Learn More
           </div>
@@ -161,8 +161,6 @@ import bgImage from '~/assets/images/background1.png';
 import axios from 'axios';
 import Faq1 from '~/assets/images/faq1.jpg';
 import { onMounted, ref } from 'vue';
-import lottie from 'lottie-web';
-import type { AnimationItem } from 'lottie-web';
 import AppWrapper from '~/components/AppWrapper/ProductsAppWrapper.vue';
 import img2 from '~/assets/images/teamTwo.jpg';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -187,7 +185,6 @@ const team = [
   { title: "Stefanie & Simon", description: "Founders of Future Catalyst & Multiverse", image: Simon },
   { title: "Power-Team of 250+", description: "Core, Design, DEV, PR, Marketing/Sales, Administration, Support & Compliance", image: Power },
   { title: "Multiverse Botswana", description: "Presindential Envoy Core Team", image: BotswanaTeam },
-  { title: "Presidential Task Force", description: "Future Trends Implementation Catalysts", image: BotswanaTeam },
 ]
 
 const slider = ref<HTMLElement | null>(null);
@@ -233,14 +230,14 @@ const animationsMap = [
 ];
 
 const fetchFaqs = async (): Promise<void> => {
-  try {
-    const response = await axios.get(`${baseURL}/faqs`, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        Authorization: `Bearer ${config.public.apiToken}`
+      const cached = localStorage.getItem("faqsCache");
+      if (cached) {
+        accordionItems.value = JSON.parse(cached);
       }
-    });
+
+      try {
+        const response = await axios.get("/api/faq");
+
 
     if (response.status === 200) {
       const data = response.data.data;
@@ -276,17 +273,6 @@ onMounted( async () => {
   };
 
   animateSlider(slider.value);
-  animationsMap.forEach(({ ref, path }) => {
-    if (ref.value) {
-      lottie.loadAnimation({
-        container: ref.value,
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: `/json/${path}`,
-      });
-    }
-  });
   await Promise.all([
     fetchFaqs(),
   ]);

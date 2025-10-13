@@ -203,22 +203,22 @@
                  </div>
                  <ul class="space-y-4 text-gray-900 translate-x-8 max-sm:translate-x-0 text-start">
                     <li class="flex items-center">
-                       best tailor-cut options for your needs & budget
+                       <Tag /> best tailor-cut options for your needs & budget
                     </li>
                     <li class="flex items-center font-medium">
-                       <Icon /> Presidential / Partner
+                       <Tag /> Presidential / Partner
                     </li>
                     <li class="flex items-center font-medium">
-                       <Icon /> Creator / Builder / Explore
+                       <Tag /> Creator / Builder / Explore
                     </li>
                     <li class="flex items-center font-medium">
-                       <Icon /> Access to all Platform Features
+                       <Tag /> Access to all Platform Features
                     </li>
                     <li class="flex items-center font-medium">
-                       <Icon /> (VIP) Academy Access
+                       <Tag /> (VIP) Academy Access
                     </li>
                     <li class="flex items-center font-medium">
-                       <Icon /> Global / National Scalling
+                       <Tag /> Global / National Scalling
                     </li>
                  </ul>
                  <button class="bg-[#cfb16d] text-white px-6 py-3 w-full max-lg:px-1" style="border-radius: 0.5rem;">
@@ -241,7 +241,7 @@
   import { onMounted, ref } from 'vue';
   import lottie from 'lottie-web';
   import type { AnimationItem } from 'lottie-web';
-  import Icon from '~/icons/Tag.vue';
+  import Tag from '~/icons/Tag.vue';
 
 const slider = ref<HTMLElement | null>(null);
 

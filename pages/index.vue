@@ -123,9 +123,9 @@
 						</div>
 						<div class="flex justify-center md:justify-start items-center">
 							<button
-								class="btn btn-outline-primary rounded-[10px] btn-white-text text-sm border-2 px-6 border-gold-light py-4 lg:py-5"
+								class="btn btn-outline-primary rounded-[10px] btn-white-text text-sm border-2 px-6 border-gold-light py-4 lg:py-5 cursor-not-allowed"
 								@click="handleOnboard"
-								:disabled="isConnecting"
+								:disabled="true"
 								:class="{ 'cursor-not-allowed': isConnecting }">
 								{{ isConnecting ? "Connecting..." : "CONNECT & ONBOARD" }}
 							</button>

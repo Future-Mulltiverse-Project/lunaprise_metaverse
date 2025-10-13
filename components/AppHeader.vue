@@ -110,7 +110,7 @@
 														<FutureIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
-														<NuxtLink to="/">
+														<NuxtLink to="/products_and_services">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
 																Welcome
@@ -172,7 +172,7 @@
 														<ProductsServicesIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
-														<NuxtLink to="https://www.lunaprisemetaverse.com/products_and_services">
+														<NuxtLink to="/products_and_services">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
 																Products & Services
@@ -590,8 +590,8 @@
 										<div class="flex sm:justify-end space-x-2">
 											<button
 												@click="handleOnboard"
-												:disabled="isConnecting"
-												class="px-2 py-2 text-medium text-white font-medium"
+												:disabled="true"
+												class="cursor-not-allowed px-2 py-2 text-medium text-white font-medium"
 												style="
 													padding-right: 16px;
 													padding-left: 16px;
@@ -681,7 +681,7 @@
 													<FutureIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="/">
+													<NuxtLink to="/products_and_services">
 														<p
 															class="text-sm font-bold text-gray-700 dark:text-white group-hover:text-gold-light">
 															Welcome
@@ -742,7 +742,7 @@
 													<ProductsServicesIcon class="p-1 w-8 h-auto ml-0" />
 												</div>
 												<div class="pl-3">
-													<NuxtLink to="https://www.lunaprisemetaverse.com/products_and_services">
+													<NuxtLink to="/products_and_services">
 														<p
 															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
 															Products & Services
@@ -1355,11 +1355,11 @@
 									<div class="flex justify-end space-x-2">
 										<button
 											@click="handleOnboard"
-											:disabled="isConnecting"
+											:disabled="true"
 											:class="{
 												'opacity-50 cursor-not-allowed': isConnecting,
 											}"
-											class="px-2 py-2 text-medium border-2 border-gold-light font-semibold text-gold-light rounded-[10px] bg-[#0C0F22]">
+											class="cursor-not-allowed px-2 py-2 text-medium border-2 border-gold-light font-semibold text-gold-light rounded-[10px] bg-[#0C0F22]">
 											{{ isConnecting ? "Connecting..." : "Connect / Onboard" }}
 										</button>
 									</div>

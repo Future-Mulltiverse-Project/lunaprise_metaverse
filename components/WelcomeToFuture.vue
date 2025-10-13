@@ -5,7 +5,7 @@
             
         <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4   text-lg">
           <div class="text-lg p-2 px-5 text-black bg-[#f7f2e8] cursor-pointer" style="border-radius: 15px; border: #CFB16D solid 3px;">
-            Welcome to the Future!
+            Welcome to the Future of Space!
           </div>
         </div>
 

@@ -305,11 +305,9 @@
         >
           <div class="bg-white p-6 text-center">
             <div class="flex justify-center w-full">
-              <client-only>
               <div ref="fingerprint" class="w-16 h-16 mx-auto mb-4"></div>
               <div ref="metaverse" class="w-16 h-16 mx-auto mb-4"></div>
               <div ref="astronautSuit" class="w-16 h-16 mx-auto mb-4"></div>
-              </client-only>
             </div>
             <h3 class="text-xl lg:text-2xl mb-2 text-black">
               Onboard / Connect
@@ -442,6 +440,8 @@ import Bg4 from '~/assets/images/bg4.png';
 import Bg6 from '~/assets/images/bg6.png';
 import Future from '~/assets/images/future_icon.png';
 import { onMounted } from 'vue';
+import lottie from 'lottie-web';
+import type { AnimationItem } from 'lottie-web';
 
 const slider = ref<HTMLElement | null>(null);
 
@@ -510,6 +510,19 @@ onMounted(() => {
       animate();
     }
   };
+
+  animateSlider(slider.value);
+  animationsMap.forEach(({ ref, path }) => {
+    if (ref.value) {
+      lottie.loadAnimation({
+        container: ref.value,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: `/json/${path}`,
+      });
+    }
+  });
 
   if (route.query.section === 'pricing') {
     activeSection.value = 'pricing';
