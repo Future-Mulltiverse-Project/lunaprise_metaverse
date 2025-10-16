@@ -2,12 +2,12 @@
   <section :class="$style.section" class="font-satoshi border-[3px] border-gold-light bg-custom-dark">
     <!-- Left Black Fade Effect -->
     <div :class="$style.fadeLeft"></div>
-    <section class="pt-8 pb-8">
+    <section class="pt-8 pb-5">
       <div class="row" :class="$style.row">
-        <p style="text-align: center;" class="font-semibold text-lg lg:text-xl">
+        <p style="text-align: center;" class="font-semibold text-sm lg:text-xl">
           <span style="color: #CFB16D">You're in the best hands:</span>
         </p>
-        <p style="text-align: center;" class="font-semibold pt-3 pb-1 text-lg lg:text-xl">
+        <p style="text-align: center;" class="font-semibold pt-3 pb-1 text-sm lg:text-xl">
           <span style="color: #ffffff">Some of our Business & Technology Partners</span>
         </p>
       </div>
@@ -16,16 +16,16 @@
           <!-- First Slider: Images 1-13 -->
           <div :class="$style.sliderWrapper">
             <div ref="slider1" :class="$style.slider">
-              <img style="width: auto; height: 80px;" v-for="(img, index) in firstImages" :key="index" :src="img" :alt="'Partner ' + (index + 1)" />
-              <img style="width: auto; height: 80px;" v-for="(img, index) in firstImages" :key="'dup' + index" :src="img" :alt="'Partner ' + (index + 1)" />
+              <img class="w-auto h-12 lg:h-20" v-for="(img, index) in firstImages" :key="index" :src="img" :alt="'Partner ' + (index + 1)" />
+              <img class="w-auto h-12 lg:h-20" v-for="(img, index) in firstImages" :key="'dup' + index" :src="img" :alt="'Partner ' + (index + 1)" />
             </div>
           </div>
 
           <!-- Second Slider: Images 14-25 -->
           <div :class="$style.sliderWrapper">
             <div ref="slider2" :class="$style.slider">
-              <img style="width: auto; height: 80px;" v-for="(img, index) in secondImages" :key="index" :src="img" :alt="'Partner ' + (index + 14)" />
-              <img style="width: auto; height: 80px;" v-for="(img, index) in secondImages" :key="'dup' + index" :src="img" :alt="'Partner ' + (index + 14)" />
+              <img class="w-auto h-12 lg:h-20" v-for="(img, index) in secondImages" :key="index" :src="img" :alt="'Partner ' + (index + 14)" />
+              <img class="w-auto h-12 lg:h-20" v-for="(img, index) in secondImages" :key="'dup' + index" :src="img" :alt="'Partner ' + (index + 14)" />
             </div>
           </div>
         </div>

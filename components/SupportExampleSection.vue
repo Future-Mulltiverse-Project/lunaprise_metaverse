@@ -51,7 +51,7 @@
       <!-- Sections -->
       <section v-show="activeSection === 'ecosystem'" class="space-y-8">
         <div class="text-center space-y-8 mx-auto bg-white">
-          <h1 class="text-black text-center text-[3rem] lg:text-6xl">
+          <h1 class="text-black text-center text-[2rem] lg:text-6xl">
             Explore our
             <span
               class="text-[#cfb16d] font-instrument-serif italic font-normal"

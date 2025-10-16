@@ -1,5 +1,5 @@
 <template>
-    <section :class="$style.section" class="w-full h-full flex flex-col justify-center items-center">
+    <section :class="$style.section" class="w-full h-full flex flex-col justify-center items-center" style="padding-left: 16px; padding-right: 16px;">
       <section class="py-16 font-satoshi max-w-7xl">
         <div class="space-y-4 container">
             
@@ -17,7 +17,7 @@
            We partner with visionary creators, leaders, nation & world builders to deliver extraordinary innovation that bridges imagination, technology, & real-world impact.
         </p>
       </div>
-      <div class="row pt-8 max-w-7xl container">
+      <div class="row pt-8 max-w-7xl">
           <div class="h-[25rem] lg:h-[40rem] container border-4 border-gold-light max-sm:overflow-x-hidden iframe-container rounded-2xl">
             <iframe
             src="https://bit.ly/Future_Multiverse_Beta_Test_026"

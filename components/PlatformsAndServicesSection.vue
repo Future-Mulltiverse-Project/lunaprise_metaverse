@@ -14,21 +14,21 @@
               <div class="p max-w-5xl">
                  <div class="inline-flex items-center p-2 border border-6 border-[#cfb16d] bg-[#f6f1e5] text-gray-700  rounded-2xl" style="border-width: 3px">
                     <button
-                       :class="[' rounded-full text-xl p-1 max-lg:text-sm lg:px-2', activeTab === 'business' ? 'bg-white shadow-sm border-[#cfb16d] ' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="[' rounded-full text-xs lg:text-sm p-1 max-lg:text-sm lg:px-2', activeTab === 'business' ? 'bg-white shadow-sm border-[#cfb16d] ' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setActiveTab('business')"
                        >
                         Business
                     </button>
                     <button
-                       :class="['text-xl  rounded-full p-1 max-lg:text-sm lg:px-2', activeTab === 'design' ? 'bg-white shadow-sm border-[#cfb16d] border' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="['text-xs lg:text-sm  rounded-full p-1 max-lg:text-sm lg:px-2', activeTab === 'design' ? 'bg-white shadow-sm border-[#cfb16d] border' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setActiveTab('design')"
                        >
                     Design
                     </button>
                     <button
-                       :class="['text-xl  rounded-full p-1 max-lg:text-sm lg:px-2', activeTab === 'memberships' ? 'bg-white shadow-sm border-[#cfb16d] border' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="['text-xs lg:text-sm  rounded-full p-1 max-lg:text-sm lg:px-2', activeTab === 'memberships' ? 'bg-white shadow-sm border-[#cfb16d] border' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setActiveTab('memberships')"
                        >
@@ -46,14 +46,14 @@
               <div class="p max-w-5xl">
                  <div class="inline-flex items-center p-2 border border-6 border-[#cfb16d] bg-[#f6f1e5] text-gray-700 rounded-2xl" style="border-width: 3px">
                     <!-- <button
-                       :class="['border rounded-full text-xl p-1 max-lg:text-sm lg:px-2', activeTabCorporate === 'pre' ? 'bg-white shadow-sm border-[#cfb16d]' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="['border rounded-full text-xs lg:text-sm p-1 max-lg:text-sm lg:px-2', activeTabCorporate === 'pre' ? 'bg-white shadow-sm border-[#cfb16d]' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setactiveTabCorporate('pre')"
                        >
                     Pre-launch
                     </button> -->
                     <button
-                       :class="['text-xl rounded-full p-1 max-lg:text-sm lg:px-2', activeTabCorporate === 'pub' ? 'bg-white shadow-sm border-[#cfb16d]' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="['text-xs lg:text-sm rounded-full p-1 max-lg:text-sm lg:px-2', activeTabCorporate === 'pub' ? 'bg-white shadow-sm border-[#cfb16d]' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setactiveTabCorporate('pub')"
                        >
@@ -166,14 +166,14 @@
               <div class="p max-w-5xl">
                  <div class="inline-flex items-center p-2 border border-6 border-[#cfb16d] bg-[#f6f1e5] text-gray-700 rounded-2xl" style="border-width: 3px">
                     <!-- <button
-                       :class="['border rounded-full text-xl p-1 max-lg:text-sm lg:px-2', activeTabCorporate === 'pre' ? 'bg-white shadow-sm border-[#cfb16d]' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="['border rounded-full text-xs lg:text-sm p-1 max-lg:text-sm lg:px-2', activeTabCorporate === 'pre' ? 'bg-white shadow-sm border-[#cfb16d]' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setactiveTabCorporate('pre')"
                        >
                     Pre-launch
                     </button> -->
                     <button
-                       :class="['text-xl rounded-full p-1 max-lg:text-sm lg:px-2', activeTabCorporate === 'pub' ? 'bg-white shadow-sm border-[#cfb16d]' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="['text-xs lg:text-sm rounded-full p-1 max-lg:text-sm lg:px-2', activeTabCorporate === 'pub' ? 'bg-white shadow-sm border-[#cfb16d]' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setactiveTabCorporate('pub')"
                        >

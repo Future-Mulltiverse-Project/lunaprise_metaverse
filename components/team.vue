@@ -4,7 +4,7 @@
 
     <div class="flex flex-col lg:flex-row justify-center items-center py-8">
       <div
-        class="text-lg p-2 px-5 text-black bg-[#f7f2e8] cursor-pointer"
+        class="text-xs lg:text-sm p-2 px-5 text-black bg-[#f7f2e8] cursor-pointer"
         style="border-radius: 15px; border: #cfb16d solid 3px"
       >
         Our Team
@@ -12,7 +12,7 @@
     </div>
 
     <div class="text-center space-y-8 max-w-5xl mx-auto bg-white">
-      <h1 class="text-black text-center text-[3rem] lg:text-6xl max-lg:px-2">
+      <h1 class="text-black text-center text-[2rem] lg:text-6xl max-lg:px-2">
         Meet our
         <span class="font-instrument-serif italic font-normal">
           visionary team.
