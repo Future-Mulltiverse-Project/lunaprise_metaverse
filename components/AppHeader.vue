@@ -30,7 +30,7 @@
 		<div class="flex-1 flex justify-between items-center">
 			<a href="/" class="flex text-lg font-semibold">
 				<img
-					src="@/assets/images/future_multiverse_logo.png"
+					src="@/assets/images/image2.png"
 					class="w-10"
 					alt="logo" />
 			</a>
@@ -50,7 +50,7 @@
 					class="bg-[#0C0F22] py-2 items-center sticky left-0">
 					<AccordionItem value="item-1" class="border-none">
 						<img
-							src="@/assets/images/future_multiverse_logo.png"
+							src="@/assets/images/image2.png"
 							class="w-10 h-auto ml-7 mt-1"
 							alt="logo" />
 					</AccordionItem>
@@ -590,7 +590,7 @@
 										<div class="flex sm:justify-end space-x-2">
 											<button
 												@click="handleOnboard"
-												:disabled="true"
+												:disabled="isConnecting"
 												class="cursor-not-allowed px-2 py-2 text-medium text-white font-medium"
 												style="
 													padding-right: 16px;
@@ -624,7 +624,7 @@
 					<NavigationMenuItem>
 						<NavigationMenuLink>
 							<img
-								src="@/assets/images/future_multiverse_logo.png"
+								src="@/assets/images/image2.png"
 								class="w-12 h-auto pr-2"
 								alt="logo" />
 						</NavigationMenuLink>
@@ -1355,7 +1355,7 @@
 									<div class="flex justify-end space-x-2">
 										<button
 											@click="handleOnboard"
-											:disabled="true"
+											:disabled="isConnecting"
 											:class="{
 												'opacity-50 cursor-not-allowed': isConnecting,
 											}"
