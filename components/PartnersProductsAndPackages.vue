@@ -73,10 +73,11 @@ import img37 from '~/assets/images/partners/image37.png';
 import img38 from '~/assets/images/partners/image38.png';
 import img39 from '~/assets/images/partners/image39.png';
 import img40 from '~/assets/images/partners/image40.png';
+import img41 from '~/assets/images/partners/image41.webp';
 
 // Split images into two parts
-const firstImages = ref([img6, img5, img10, img3, img11, img4, img12, img2,  img25, img13, img1, img23, img7, img40, img8, img15, img26, img27, img28, img29, img30, img9]);
-const secondImages = ref([img26, img39, img38, img37, img36, img14, img24, img35, img20, img33, img21, img19, img32, img31, img15, img40]);
+const firstImages = ref([img6, img5, img10, img3, img11, img4, img12, img2, img40, img25, img13, img1, img23, img7, img8, img15, img26, img27, img28, img29, img30, img41, img9]);
+const secondImages = ref([img26, img39, img38, img37, img36, img14, img24, img35, img20, img33, img21, img19, img32, img31, img15]);
 
 const slider1 = ref<HTMLElement | null>(null);
 const slider2 = ref<HTMLElement | null>(null);
