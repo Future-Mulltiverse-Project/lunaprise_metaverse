@@ -1,6 +1,6 @@
 <template>
   <div class="w-full bg-white ">
-     <section class="">
+     <section class="m-0 lg:mt-14">
         <div class="container max-w-7xl mx-auto px-4">
            <div class="text-center space-y-8 max-w-5xl mx-auto bg-white">
               <h1 class="text-black text-center max-w-[40rem] mx-auto  text-[3.5rem]  lg:text-6xl">

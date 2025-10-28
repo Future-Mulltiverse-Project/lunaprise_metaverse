@@ -11,13 +11,10 @@
           </p>
         </div>
 
-        <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4   text-lg">
-          <NuxtLink to=""  @click.prevent="$emit('goToPricing')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg">
-            Our Offers for You
+        <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4 text-lg">
+          <NuxtLink to=""  @click.prevent="$emit('showWelcome')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg">
+            Explore our Offers
           </NuxtLink>
-          <div class="text-sm p-2 text-custom-dark bg-white border border-gold-light cursor-pointer rounded-lg">
-            Learn More
-          </div>
         </div>
 
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-white m-0 px-4 pt-10 pb-10 border-4 border-gold-light">
+  <div class="w-full bg-white m-0 lg:mt-14 px-4 pt-10 pb-10 border-4 border-gold-light">
     <section>
       <!-- Solutions Tab -->
       <section class="w-full bg-white pb-8 flex justify-around">
@@ -31,18 +31,6 @@
               style="border-radius: 0.7rem; border-width: 3px"
             >
               Process
-            </button>
-            <button
-              @click="setActiveSection('pricing')"
-              :class="[
-                'text-xl p-1 max-lg:text-sm lg:px-2',
-                activeSection === 'pricing'
-                  ? 'bg-white shadow-sm border border-[#cfb16d]'
-                  : 'text-gray-700 border-none',
-              ]"
-              style="border-radius: 0.7rem; border-width: 3px"
-            >
-              Pricing
             </button>
           </div>
         </div>
@@ -403,15 +391,14 @@
         class="Pricing"
         id="pricing-section"
       >
-        <PlatformsAndServicesSection />
+        
       </section>
 
       <div
         class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4 text-lg pt-8"
       >
         <NuxtLink
-          to=""
-          @click="setActiveSection('pricing')"
+          to="pricing"
           class="bg-[#cfb16d] p-2 cursor-pointer rounded-lg text-white"
         >
           Our Offer for You
