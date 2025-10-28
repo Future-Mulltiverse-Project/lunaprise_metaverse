@@ -101,9 +101,15 @@
                        <i class="fa-solid fa-bolt text-[#cfb16d] mr-2"></i> Design Packages
                     </li>
                  </ul>
-                 <button class="bg-[#cfb16d] text-white px-6 py-3 rounded-xl hover:bg-[#cfb16d] w-full max-lg:px-1" style="border-radius: 0.5rem;">
-                 Explore Corporate Packages
-                 </button>
+            <button
+               @click="checkSession"
+               :disabled="isChecking"
+               :class="isChecking ? 'cursor-not-allowed' : ''"
+              class="bg-[#cfb16d] text-white px-6 py-3 w-full max-lg:px-1"
+              style="border-radius: 0.5rem"
+            >
+              {{ isChecking ? 'Checking session...' : 'Explore Business Packages' }}
+            </button>
               </div>
            </div>
 
@@ -152,9 +158,15 @@
                        <i class="fa-solid fa-circle-check text-[#cfb16d] mr-2"></i> Marketing Leading Price / Value
                     </li>
                  </ul>
-                 <button class="bg-[#cfb16d] text-white px-6 py-3 w-full max-lg:px-1" style="border-radius: 0.5rem;">
-                 Explore Design Packages
-                 </button>
+            <button
+               @click="checkSession"
+               :disabled="isChecking"
+               :class="isChecking ? 'cursor-not-allowed' : ''"
+              class="bg-[#cfb16d] text-white px-6 py-3 w-full max-lg:px-1"
+              style="border-radius: 0.5rem"
+            >
+              {{ isChecking ? 'Checking session...' : 'Explore Design Packages' }}
+            </button>
               </div>
            </div>
 
@@ -221,9 +233,15 @@
                        <Tag /> Global / National Scalling
                     </li>
                  </ul>
-                 <button class="bg-[#cfb16d] text-white px-6 py-3 w-full max-lg:px-1" style="border-radius: 0.5rem;">
-                     Explore Design Packages
-                 </button>
+            <button
+               @click="checkSession"
+               :disabled="isChecking"
+               :class="isChecking ? 'cursor-not-allowed' : ''"
+              class="bg-[#cfb16d] text-white px-6 py-3 w-full max-lg:px-1"
+              style="border-radius: 0.5rem"
+            >
+              {{ isChecking ? 'Checking session...' : 'Explore Memberships Packages' }}
+            </button>
               </div>
            </div>
         </div>
@@ -265,6 +283,8 @@ const squareFootage = ref<HTMLElement | null>(null)
 const treePlanting = ref<HTMLElement | null>(null)
 const view = ref<HTMLElement | null>(null)
 const wiredHover = ref<HTMLElement | null>(null)
+const isChecking = ref(false);
+const futureMultiverseName = ref<string>('');
 
 // Map refs to their respective JSON files
 const animationsMap = [
@@ -286,6 +306,66 @@ const animationsMap = [
   { ref: view, path: "view.json" },
   { ref: wiredHover, path: "wired_hover.json" }
 ]
+
+interface OnboardRequest {
+  callback_uri: string;
+  source_platform: string;
+}
+
+function checkSession() {
+   isChecking.value = true;
+  const getCookie = (name: string): string | null => {
+    const cookie = document.cookie
+      .split('; ')
+      .find((c) => c.startsWith(name + '='));
+    return cookie ? decodeURIComponent(cookie.split('=')[1]) : null;
+  };
+
+  if (process.client) {
+    const cookieValue = getCookie('futuremultiversename');
+    futureMultiverseName.value = cookieValue || '';
+
+    if (!futureMultiverseName.value) {
+      handleOnboard();
+    } else {
+      const domain = window.location.hostname.split('.').slice(-2).join('.');
+      document.cookie = `futuremultiversename=${futureMultiverseName.value}; path=/; domain=${domain}; SameSite=None; Secure`;
+      isChecking.value = false;
+    }
+  }
+}
+const handleOnboard = async (): Promise<void> => {
+  const requestData: OnboardRequest = {
+    callback_uri: window.location.href,
+    source_platform: 'website',
+  };
+
+  try {
+    const response = await fetch(
+      'https://api.auth.futuremultiverse.com/api/v1/account/connect/request',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(requestData),
+      },
+    );
+
+    const onboardResponse = await response.json();
+
+    if (onboardResponse?.status === 1) {
+      localStorage.setItem('futuremultiverseRedirectUrl', window.location.href);
+      window.location.replace(
+        `https://auth.futuremultiverse.com/?source_platform=simple&request=${onboardResponse.data.reference}&sponsor=FCL-QW3RTY`,
+      );
+    } else {
+      alert(`Invalid response from onboard API: ${onboardResponse}`);
+    }
+  } catch (error) {
+    console.error('Error during onboard:', error);
+  } finally {
+    setTimeout(() => (isChecking.value = false), 5000);
+  }
+};
 
 onMounted(() => {
   if (process.client) {
