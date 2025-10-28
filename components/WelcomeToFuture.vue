@@ -34,7 +34,7 @@
       </div>
       </section>
         <div class="flex flex-col lg:flex-row justify-center items-center pt-8 lg:space-x-4 text-lg">
-          <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg">
+          <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
             Explore our Offers
           </NuxtLink>
         </div>

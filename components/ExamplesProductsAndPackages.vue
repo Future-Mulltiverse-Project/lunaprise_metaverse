@@ -364,7 +364,7 @@
       </div>
 
       <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4 text-sm">
-        <div  @click.prevent="$emit('showSupport')" class="bg-[#cfb16d] p-2 text-white cursor-pointer rounded-lg">
+        <div  @click.prevent="$emit('showSupport')" class="bg-[#cfb16d] p-2 text-sm text-white cursor-pointer rounded-lg border-2 border-gold-light">
           Explore our Offers
         </div>
         <div class="text-sm p-2 text-custom-dark bg-white cursor-pointer rounded-lg border-2 border-gold-light">

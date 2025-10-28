@@ -399,12 +399,12 @@
       >
         <NuxtLink
           to="pricing"
-          class="bg-[#cfb16d] p-2 cursor-pointer rounded-lg text-white"
+          class="bg-[#cfb16d] p-2 text-sm cursor-pointer rounded-lg text-white border-2 border-gold-light"
         >
           Our Offer for You
         </NuxtLink>
         <div
-          class="text-lg p-2 text-black bg-white cursor-pointer rounded-lg border-2 border-gold-light"
+          class="p-2 text-sm text-black bg-white cursor-pointer rounded-lg border-2 border-gold-light"
         >
           Learn More
         </div>
