@@ -22,8 +22,6 @@ export default defineNuxtConfig({
     public: {
       APP_NAME: 'Lunaprise Metaverse',
       APP_TITLE: 'Lunaprise Metaverse',
-      APP_DESCRIPTION: '',
-      API_URL: 'https://multiversemalaw.com/',
    },
     
   },
@@ -50,11 +48,11 @@ export default defineNuxtConfig({
                   content:
                     "Explore rare NFT collections, discover new artists, and securely trade digital assets in the Lunaprise Metaverse.",
                 },
-                { property: "og:url", content: "https://marketplace.futuremultiverse.dev" },
+                { property: "og:url", content: "https://lunaprisemetaverse.com" },
                 { property: "og:type", content: "website" },
                 {
                   property: "og:image",
-                  content: "https://marketplace.futuremultiverse.dev/icon_image.png",
+                  content: "https://lunaprisemetaverse.com/icon_image.png",
                 },
         
                 // Twitter Cards
@@ -67,7 +65,7 @@ export default defineNuxtConfig({
                 },
                 {
                   name: "twitter:image",
-                  content: "https://marketplace.futuremultiverse.dev/icon_image.png",
+                  content: "https://lunaprisemetaverse.com/icon_image.png",
                 },
               ],
         link: [
