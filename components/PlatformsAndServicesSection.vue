@@ -1,9 +1,14 @@
 <template>
-  <div class="w-full bg-white ">
-     <section class="m-0 lg:mt-14">
+  <div class="w-full bg-white">
+     <section class="lg:mt-[68px] border-4 border-gold-light">
         <div class="container max-w-7xl mx-auto px-4">
+         <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4 text-lg my-8">
+          <div class="text-sm lg:text-lg p-1.5 px-5 text-black bg-[#f7f2e8] cursor-pointer" style="border-radius: 15px; border: #CFB16D solid 3px;">
+            <div class="bg-white p-1.5 px-5 shadow-sm border-[#cfb16d] rounded-xl border-2">Pricing</div>
+          </div>
+        </div>
            <div class="text-center space-y-8 max-w-5xl mx-auto bg-white">
-              <h1 class="text-black text-center max-w-[40rem] mx-auto  text-[3.5rem]  lg:text-6xl">
+              <h1 class="text-black text-center max-w-[40rem] mx-auto  text-[2.5rem]  lg:text-6xl">
                  Our Offers for You
               </h1>
               <p class="max-w-[590px] text-center text-[#707070] text-md lg:text-lg mx-auto">
@@ -14,21 +19,21 @@
               <div class="p max-w-5xl">
                  <div class="inline-flex items-center p-2 border border-6 border-[#cfb16d] bg-[#f6f1e5] text-gray-700  rounded-2xl" style="border-width: 3px">
                     <button
-                       :class="[' rounded-full text-xs lg:text-sm p-1 max-lg:text-sm lg:px-2', activeTab === 'business' ? 'bg-white shadow-sm border-[#cfb16d] ' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="[' rounded-full text-xs lg:text-sm p-1 max-lg:text-sm lg:px-2', activeTab === 'business' ? 'bg-white shadow-sm border-custom-dark ' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setActiveTab('business')"
                        >
                         Business
                     </button>
                     <button
-                       :class="['text-xs lg:text-sm  rounded-full p-1 max-lg:text-sm lg:px-2', activeTab === 'design' ? 'bg-white shadow-sm border-[#cfb16d] border' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="['text-xs lg:text-sm  rounded-full p-1 max-lg:text-sm lg:px-2', activeTab === 'design' ? 'bg-white shadow-sm border-custom-dark border' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setActiveTab('design')"
                        >
                     Design
                     </button>
                     <button
-                       :class="['text-xs lg:text-sm  rounded-full p-1 max-lg:text-sm lg:px-2', activeTab === 'memberships' ? 'bg-white shadow-sm border-[#cfb16d] border' : 'text-gray-700 border-[#f6f1e5]']"
+                       :class="['text-xs lg:text-sm  rounded-full p-1 max-lg:text-sm lg:px-2', activeTab === 'memberships' ? 'bg-white shadow-sm border-custom-dark border' : 'text-gray-700 border-[#f6f1e5]']"
                        style="border-radius: 0.7rem; border-width: 3px"
                        @click="setActiveTab('memberships')"
                        >
@@ -103,8 +108,8 @@
                  </ul>
             <button
                @click="checkSession"
-               :disabled="isChecking"
-               :class="isChecking ? 'cursor-not-allowed' : ''"
+               :disabled="true"
+               :class="true ? 'cursor-not-allowed' : ''"
               class="bg-[#cfb16d] text-white px-6 py-3 w-full max-lg:px-1"
               style="border-radius: 0.5rem"
             >
@@ -160,8 +165,8 @@
                  </ul>
             <button
                @click="checkSession"
-               :disabled="isChecking"
-               :class="isChecking ? 'cursor-not-allowed' : ''"
+               :disabled="true"
+               :class="true ? 'cursor-not-allowed' : ''"
               class="bg-[#cfb16d] text-white px-6 py-3 w-full max-lg:px-1"
               style="border-radius: 0.5rem"
             >
@@ -235,8 +240,8 @@
                  </ul>
             <button
                @click="checkSession"
-               :disabled="isChecking"
-               :class="isChecking ? 'cursor-not-allowed' : ''"
+               :disabled="true"
+               :class="true ? 'cursor-not-allowed' : ''"
               class="bg-[#cfb16d] text-white px-6 py-3 w-full max-lg:px-1"
               style="border-radius: 0.5rem"
             >
@@ -245,6 +250,11 @@
               </div>
            </div>
         </div>
+                  <div class="flex flex-col lg:flex-row mx-auto justify-center items-center max-lg:space-y-4 lg:space-x-4 text-lg py-8">
+                  <NuxtLink to=""  @click.prevent="$emit('goToPricing')" class="bg-[#cfb16d] text-white p-1.5 px-4 cursor-pointer text-sm lg:text-lg" style="border-radius: 10px; border: #CFB16D solid 3px;">
+                    Explore all Offers
+                  </NuxtLink>
+                </div>
      </section>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <section :class="$style.section" class="w-full h-full flex flex-col justify-center items-center" style="padding-left: 16px; padding-right: 16px;">
-      <section class="py-16 font-satoshi max-w-7xl">
+      <section class="lg:pt-20 lg:pb-16 font-satoshi max-w-7xl">
         <div class="space-y-4 container">
             
         <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4   text-lg">

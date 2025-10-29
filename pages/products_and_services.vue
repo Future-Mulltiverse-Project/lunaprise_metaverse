@@ -16,19 +16,19 @@
 				@showWelcome="handleShowSection('welcome')" />
 			<PartnersProductsAndPackages @goToPricing="goToSection = 'pricing'" />
 		</section>
-		<section v-if="showSection === 'welcome'" class="py-10">
+		<section v-if="showSection === 'welcome'">
 			<WelcomeToFuture
 				@goToPricing="goToSection = 'pricing'"
 				@showResults="handleShowSection('results')" />
+			<PartnersProductsAndPackages @goToPricing="goToSection = 'pricing'" />
 		</section>
 		<section v-if="showSection === 'results'" class="py-10">
 			<ResultsProductsAndPackages @goToPricing="goToSection = 'pricing'" />
 			<ExamplesProductsAndPackages @goToPricing="goToSection = 'pricing'" @showSupport="handleShowSection('support')"/>
 		</section>
 		<section v-if="showSection === 'support'" class="">
-			<SupportExampleSection
-				:goToSection="goToSection"
-				@sectionNavigated="goToSection = null" />
+        	<PlatformsAndServicesSection />
+			<Team @goToPricing="goToSection = 'pricing'" />
 		</section>
 	</div>
 </template>

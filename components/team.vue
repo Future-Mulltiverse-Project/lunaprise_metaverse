@@ -34,7 +34,7 @@
         class="text-lg p-2 px-5 text-white bg-[#CFB16D] cursor-pointer"
         style="border-radius: 15px; border: #cfb16d solid 3px"
       >
-        Book a 15-min call
+        Book a 20 Minutes call
         <i class="fas fa-arrow-right text-white"></i>
       </div>
     </div>
@@ -143,13 +143,8 @@
           <NuxtLink to=""  @click.prevent="$emit('goToPricing')"
             class="bg-[#cfb16d] p-2 cursor-pointer text-white rounded-lg border-2 border-gold-light"
           >
-            Product & Service Packages
+            Explore Our Offers
           </NuxtLink>
-          <div
-            class="text-lg p-2 text-custom-dark bg-white cursor-pointer rounded-lg border-2 border-gold-light"
-          >
-            Learn More
-          </div>
         </div>
       </div>
     </section>

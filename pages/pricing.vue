@@ -1,7 +1,7 @@
 <template>
 	<section class="pt-14 font-satoshi">
-        <PlatformsAndServicesSection />
-		<Team @goToPricing="goToSection = 'pricing'" />
+        <!-- <PlatformsAndServicesSection />
+		<Team @goToPricing="goToSection = 'pricing'" /> -->
 	</section>
 </template>
 <script lang="ts" setup>

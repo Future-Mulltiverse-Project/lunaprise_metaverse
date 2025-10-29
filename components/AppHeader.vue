@@ -590,7 +590,7 @@
 										<div class="flex sm:justify-end space-x-2">
 											<button
 												@click="handleOnboard"
-												:disabled="isConnecting"
+												:disabled="true"
 												class="cursor-not-allowed px-2 py-2 text-medium text-white font-medium"
 												style="
 													padding-right: 16px;
@@ -1355,9 +1355,9 @@
 									<div class="flex justify-end space-x-2">
 										<button
 											@click="handleOnboard"
-											:disabled="isConnecting"
+											:disabled="true"
 											:class="{
-												'opacity-50 cursor-not-allowed': isConnecting,
+												'opacity-50 cursor-not-allowed': true,
 											}"
 											class="px-2 py-2 text-medium border-2 border-gold-light font-semibold text-gold-light rounded-[10px] bg-[#0C0F22]">
 											{{ isConnecting ? "Connecting..." : "Connect / Onboard" }}

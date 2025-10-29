@@ -1,6 +1,6 @@
 <template>
     <section :class="$style.section" class="flex flex-col justify-center items-center px-4">
-      <section class="pt-16 font-satoshi px-4">
+      <section class="pt-10 lg:pt-32 font-satoshi px-4">
         <div class="space-y-4 container">
             
         <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4   text-lg">
@@ -25,17 +25,17 @@
           <div ref="videoContainer" class="w-full h-[25rem] lg:h-[40rem] max-sm:overflow-x-hidden rounded-[8px]">
               <iframe
                   id="ytplayer"
-                  src="https://www.youtube.com/embed/cPEQoFOPtl0?autoplay=1&mute=0&enablejsapi=1&loop=1&playlist=cPEQoFOPtl0&controls=1&rel=0"
+                  src="https://www.youtube.com/embed/FtKNhdPGQFk?autoplay=1&mute=0&enablejsapi=1&loop=1&playlist=FtKNhdPGQFk&controls=1&rel=0"
                   frameborder="0"
                   allow="autoplay; fullscreen"
-                  class="w-full h-full rounded-[8px]"
+                  class="w-full h-full rounded-[8px] border-4 border-gold-light "
               ></iframe>
           </div>
       </div>
       </section>
-        <div class="flex flex-col lg:flex-row justify-center items-center pt-8 lg:space-x-4 text-lg">
+        <div class="flex flex-col lg:flex-row justify-center items-center py-8 lg:space-x-4 text-lg">
           <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
-            Explore our Offers
+            Our Offers for You
           </NuxtLink>
         </div>
     </section>
