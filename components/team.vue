@@ -29,9 +29,9 @@
       </div>
     </div>
 
-    <div class="flex flex-col lg:flex-row justify-center items-center pt-8">
+    <div class="flex flex-col lg:flex-row justify-center items-center pt-8 pb-5">
       <div
-        class="text-lg p-2 px-5 text-white bg-[#CFB16D] cursor-pointer"
+        class="text-sm lg:text-lg p-2 px-5 text-white bg-[#CFB16D] cursor-pointer"
         style="border-radius: 15px; border: #cfb16d solid 3px"
       >
         Book a 20 Minutes call

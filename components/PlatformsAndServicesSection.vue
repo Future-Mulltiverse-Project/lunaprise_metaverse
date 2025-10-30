@@ -4,7 +4,7 @@
         <div class="container max-w-7xl mx-auto px-4">
          <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4 text-lg my-8">
           <div class="text-sm lg:text-lg p-1.5 px-5 text-black bg-[#f7f2e8] cursor-pointer" style="border-radius: 15px; border: #CFB16D solid 3px;">
-            <div class="bg-white p-1.5 px-5 shadow-sm border-[#cfb16d] rounded-xl border-2">Pricing</div>
+            <div class="bg-white p-1.5 px-5 shadow-sm border-[#cfb16d] rounded-xl border-2 text-xs lg:text-sm">Pricing</div>
           </div>
         </div>
            <div class="text-center space-y-8 max-w-5xl mx-auto bg-white">

@@ -1,15 +1,15 @@
 <template>
     <section :class="$style.section" class="flex flex-col justify-center items-center px-4">
       <section class="pt-10 lg:pt-32 font-satoshi px-4">
-        <div class="space-y-4 container">
+        <div class="space-y-8 lg:space-y-10 container">
             
-        <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4   text-lg">
+        <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4  text-lg">
           <div class="text-sm lg:text-lg p-2 px-5 text-black bg-[#f7f2e8] cursor-pointer" style="border-radius: 15px; border: #CFB16D solid 3px;">
             Welcome to the Future of Space!
           </div>
         </div>
 
-        <h2 class="text-black text-center  text-[2rem]  lg:text-5xl">
+        <h2 class="text-black text-center text-[2rem]  lg:text-5xl">
           Welcome to the <br /> <span class='gold_text font-normal italic font-instrument-serif'>Lunaprise Metaverse</span>.
         </h2>
         <h3 class="text-gold-light text-center text-lg lg:text-2xl">

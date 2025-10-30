@@ -12,7 +12,7 @@
           <span class="gold_text font-instrument-serif italic">Explore</span> the Lunaprise Metaverse.
         </h1>
         <div class="flex flex-col justify-center items-center">
-          <p class="text-center text-[#707070] text-xs lg:text-xl max-w-5xl container mb-4">
+          <p class="text-center text-[#707070] text-xs lg:text-xl max-w-5xl container mb-8 lg:mb-10">
           Explore the Lunaprise Metaverse — featuring immersive spaces, 
           transformative experiences, visionary creators, rare assets, & exclusive packages,
           all shaping the bridge between Earth, the Future of Humanity & the Multiverse.   
@@ -68,7 +68,7 @@
  
        <section v-show="selectedMain === 'Spaces'">
           <div class="flex flex-col justify-center items-center">
-            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-4 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
+            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-8 lg:mb-14 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
           <!-- All -->
           <div 
             class="flex justify-center text-xs lg:text-sm p-2 px-3 text-black hover:text-gray-700 cursor-pointer whitespace-nowrap" 
@@ -149,7 +149,7 @@
 
        <section v-show="selectedMain === 'Events / Experience'">
           <div class="flex flex-col justify-center items-center">
-            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-4 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
+            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-8 lg:mb-14 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
           <!-- All -->
           <div 
             class="flex justify-center text-xs lg:text-sm p-2 px-3 text-black hover:text-gray-700 cursor-pointer whitespace-nowrap" 
@@ -192,7 +192,7 @@
 
        <section v-show="selectedMain === 'Creators'">
           <div class="flex flex-col justify-center items-center">
-            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-4 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
+            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-8 lg:mb-14 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
           <!-- All -->
           <div 
             class="flex justify-center text-xs lg:text-sm p-2 px-3 text-black hover:text-gray-700 cursor-pointer whitespace-nowrap" 
@@ -217,7 +217,7 @@
 
        <section v-show="selectedMain === 'Assets'">
           <div class="flex flex-col justify-center items-center">
-            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-4 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
+            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-8 lg:mb-14 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
           <!-- All -->
           <div 
             class="flex justify-center text-xs lg:text-sm p-2 px-3 text-black hover:text-gray-700 cursor-pointer whitespace-nowrap" 
@@ -287,7 +287,7 @@
 
        <section v-show="selectedMain === 'Special Offers & Packages'">
           <div class="flex flex-col justify-center items-center">
-            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-4 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
+            <div class="container w-min max-w-full overflow-x-auto justify-between max-xl:space-x-4 mb-8 lg:mb-14 flex items-center p-2 px-4 text-black bg-[#f7f2e8] text-sm" :class="$style['scrollbar-hidden']" style="border-radius: 14px; border: #CFB16D solid 3px;">
           <!-- All -->
           <div 
             class="flex justify-center text-xs lg:text-sm p-2 px-3 text-black hover:text-gray-700 cursor-pointer whitespace-nowrap" 
@@ -357,7 +357,7 @@
 
       </div>
 
-      <div class="flex justify-center p-4 text-black text-lg md:text-4xl mt-8 mb-8">
+      <div class="flex justify-center p-4 text-black text-lg md:text-4xl my-8">
         <p class="text-center text-lg md:text-4xl auto max-w-[60rem]">
           "The Future isn't limited by space, nor time. Only by our courage. Everything you can imagine, can be built, and what can be built, can be accelerated!"
         </p>

@@ -9,7 +9,7 @@
           </div>
         </div>
 
-        <h2 class="text-black text-center  text-2xl  lg:text-5xl">
+        <h2 class="text-black text-center py-4 text-2xl  lg:text-5xl">
           Enter & Experience it <span class='gold_text font-instrument-serif italic font-normal'>yourself</span>.
         </h2>
         
