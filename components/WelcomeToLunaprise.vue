@@ -1,6 +1,6 @@
 <template>
-    <section class=" px-4">
-      <section class="flex flex-col justify-center items-center pt-0 lg:pt-16 font-satoshi px-4">
+    <section class="pt-10 px-4">
+      <section class="flex flex-col md:pt-20 justify-center items-center font-satoshi px-2">
         <div class="space-y-8 lg:space-y-10 max-w-7xl container">
             
         <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4  text-lg">
@@ -34,9 +34,14 @@
           </div>
       </div>
       </section>
+        <div class="flex flex-col lg:flex-row justify-center items-center lg:space-x-4 pt-8">
+          <div class="text-xs lg:text-sm p-2 px-5 font-semibold text-black bg-[#f7f2e8] cursor-pointer" style="border-radius: 10px; border: #CFB16D solid 3px;">
+           Join Our LIVE Broadcast:
+          </div>
+        </div>
         <div class="flex flex-col lg:flex-row justify-center items-center py-8 lg:space-x-4 text-lg">
           <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
-            Buy Your Ticket for Our Launch on 11/11/2025
+            Register to receive your Invitation
           </NuxtLink>
         </div>
         <p class="text-center text-[#707070] text-sm lg:text-lg max-w-5xl mx-auto pb-8">
@@ -65,10 +70,6 @@
   .btn_second {
     float: left;
     color: white;
-  }
-  .section {
-    padding: 0px 0 ;
-    background-color: #ffffff;
   }
 
   .header {
