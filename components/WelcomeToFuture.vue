@@ -1,6 +1,6 @@
 <template>
     <section class=" px-4">
-      <section class="flex flex-col justify-center items-center pt-0 lg:pt-16 font-satoshi px-4">
+      <section class="flex flex-col justify-center items-center pt-10 md:pt-32 font-satoshi px-4">
         <div class="space-y-8 lg:space-y-10 max-w-7xl container">
             
         <div class="flex flex-col lg:flex-row justify-center items-center max-lg:space-y-4 lg:space-x-4  text-lg">
