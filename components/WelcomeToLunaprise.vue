@@ -9,10 +9,17 @@
           </div>
         </div>
 
-        <h2 class="text-black text-center text-[2rem]  lg:text-5xl">
-          <span class="font-bold">Welcome to the</span> <br /> <span class='gold_text font-normal italic font-instrument-serif'>Lunaprise Metaverse</span>.<br />
-          <span class="font-bold">Launch Event <span class="italic">11/11/2025</span></span>
-        </h2>
+        <div class="space-y-5">
+            <h2 class="text-black text-center text-[2rem]  lg:text-5xl">
+            <span class="font-bold">Welcome to the</span>
+          </h2>
+          <h2 class="text-black text-center text-[2rem]  lg:text-5xl">
+            <span class='gold_text font-normal italic font-instrument-serif'>Lunaprise Metaverse</span>.
+          </h2>
+          <h2 class="text-black text-center text-[2rem]  lg:text-5xl">
+            <span class="font-bold text-black text-center text-[2rem]  lg:text-5xl">Launch Event <span class="italic">11/11/2025</span></span>
+          </h2>
+        </div>
         <h3 class="text-gold-light text-center text-lg lg:text-2xl">
           <span class="text-custom-dark">The Partnership between</span><br /> Lunaprise Mission & Museum<span class='text-custom-dark'> & </span>Future Trends Multiverse.
         </h3>
