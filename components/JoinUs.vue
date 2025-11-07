@@ -50,6 +50,11 @@
           </div>
       </div>
         </section>
+        <div class="flex flex-col lg:flex-row justify-center items-center pt-10 lg:space-x-4 text-lg">
+          <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
+            Register to receive your Invitation
+          </NuxtLink>
+        </div>
         <section class="relative max-w-7xl mx-auto pt-8">
             <!-- Left Black Fade Effect -->
             <div :class="$style.fadeLeft"></div>
@@ -57,6 +62,7 @@
             <!-- Right Black Fade Effect -->
             <div :class="$style.fadeRight"></div>
         </section>
+        <Slider />
         <div class="flex flex-col lg:flex-row justify-center items-center py-8 lg:space-x-4 text-lg">
           <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
             Register to receive your Invitation
@@ -66,6 +72,7 @@
 </template>
 <script lang="ts" setup>
 import All from "~/components/All.vue";
+import Slider from "~/components/Sliders.vue";
 import Space from '~/assets/images/space.png';
   import SpaceBlue from '~/assets/images/space-blue.png';
   import CapeCanaveral from '~/assets/images/cape-canaveral.png';

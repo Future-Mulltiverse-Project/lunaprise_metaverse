@@ -26,7 +26,7 @@
                 :style="{ backgroundImage: `url(${(card as CardType).image})` }"
               >
                 <div class="flex aspect-square items-end justify-center w-full">
-                  <div class="bg-black bg-opacity-20 w-full p-4" style="border-bottom-left-radius: 13px; border-bottom-right-radius: 13px;">
+                  <!-- <div class="bg-black bg-opacity-20 w-full p-4" style="border-bottom-left-radius: 13px; border-bottom-right-radius: 13px;">
                     <p class="text-xl text-white  text-center text-wrap">{{ card.name }}</p>
                     <p class="text-sm text-white  text-center text-wrap">{{ card.description }}</p>
 
@@ -34,11 +34,11 @@
                       <div class="bg-[#cfb16d] text-white sm:text-sm text-xs p-2 cursor-pointer" style="border-radius: 12px; border: #CFB16D solid 3px;">
                         Register to receive Invitation
                       </div>
-                      <!-- <div class="sm:text-sm p-2 text-xs text-black bg-white cursor-pointer" style="border-radius: 12px; border: #CFB16D solid 3px;">
+                       <div class="sm:text-sm p-2 text-xs text-black bg-white cursor-pointer" style="border-radius: 12px; border: #CFB16D solid 3px;">
                         Learn More
-                      </div> -->
+                      </div> 
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <!-- Duplicate cards for seamless looping -->
@@ -58,7 +58,7 @@
                 "
                 :style="{ backgroundImage: `url(${card.image})` }"
               >
-                <div class="flex aspect-square items-end justify-center w-full">
+                <!-- <div class="flex aspect-square items-end justify-center w-full">
                   <div class="bg-black bg-opacity-20 w-full p-4" style="border-bottom-left-radius: 13px; border-bottom-right-radius: 13px;">
                     <p class="text-xl text-white text-center">{{ card.name }}</p>
                     <p class="text-sm text-white text-center">{{ card.description }}</p>
@@ -67,12 +67,12 @@
                       <div class="bg-[#cfb16d] text-white sm:text-sm text-xs p-2 cursor-pointer" style="border-radius: 12px; border: #CFB16D solid 3px;">
                         Register to receive Invitation
                       </div>
-                      <!-- <div class="sm:text-sm p-2 text-xs text-black bg-white cursor-pointer" style="border-radius: 12px; border: #CFB16D solid 3px;">
+                       <div class="sm:text-sm p-2 text-xs text-black bg-white cursor-pointer" style="border-radius: 12px; border: #CFB16D solid 3px;">
                         Learn More
-                      </div> -->
+                      </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- Right Black Fade Effect -->

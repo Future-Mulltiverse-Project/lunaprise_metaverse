@@ -3,11 +3,11 @@ export default {
     darkMode: ["class"],
     content: [
     "./components/**/*.{vue,js,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
+    "./layouts/**/*.{vue,js,ts}",
+    "./pages/**/*.{vue,js,ts}",
+    "./plugins/**/*.{vue,js,ts}",
     "./app.vue",
-    "./error.vue"
+    "./error.{vue,js,ts}"
   ],
   theme: {
   	extend: {

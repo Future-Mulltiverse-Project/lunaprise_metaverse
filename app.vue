@@ -1,11 +1,7 @@
 <template>
-  <div>
-    <AppHeader />
+  <NuxtLayout>
     <NuxtPage />
-    <AppFooter />
-  </div>
+  </NuxtLayout>
 </template>
 <script setup>
-    import AppHeader from '~/components/AppHeader.vue';
-    import AppFooter from '~/components/AppFooter.vue';
 </script>
