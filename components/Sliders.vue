@@ -1,8 +1,8 @@
 <template>
-    <section class="relative max-w-7xl mx-auto py-4">
+  <section class="relative max-w-7xl mx-auto py-4">
             <!-- Left Black Fade Effect -->
             <div :class="$style.fadeLeft"></div>
-            <All :cards="slide1"/>
+            <All2 :cards="slide1"/>
             <!-- Right Black Fade Effect -->
             <div :class="$style.fadeRight"></div>
     </section>
@@ -12,22 +12,16 @@
             <All :cards="slide2"/>
             <!-- Right Black Fade Effect -->
             <div :class="$style.fadeRight"></div>
-    </section>
+    </section>   
     <section class="relative max-w-7xl mx-auto py-4">
             <!-- Left Black Fade Effect -->
             <div :class="$style.fadeLeft"></div>
-            <All :cards="slide3"/>
+            <All2 :cards="slide3"/>
             <!-- Right Black Fade Effect -->
             <div :class="$style.fadeRight"></div>
     </section>
 </template>
 <script setup>
-import Cyprus from "~/assets/images/cyprus.jpeg";
-import Germany from "~/assets/images/germany.jpg";
-import Miami from "~/assets/images/miami.webp";
-import Tokyo from "~/assets/images/tokyo.jpg";
-import LosAngeles from "~/assets/images/losangeles.jpg";
-import Dubai from "~/assets/images/dubai.webp";
 import img1 from "~/assets/images/image1.jpg";
 import img2 from "~/assets/images/image2.jpg";
 import img3 from "~/assets/images/image3.jpg";
@@ -62,18 +56,18 @@ const slide1 = [
   { name: 'Tokyo', description: 'Japan', category: "Spaceports", image: img3 },
   { name: 'Los Angeles', description: 'United States of America', category: "Spaceports", image: img4 },
   { name: 'Miami', description: 'United States of America', category: "Spaceports", image: img5 },
+  { name: 'Cyprus', description: 'Europe', category: "Space EXPO on FXPO", image: img6 },
 ]
 const slide2 = [
-  { name: 'Cyprus', description: 'Europe', category: "Space EXPO on FXPO", image: img6 },
   { name: 'Germany (Ulm)', description: 'Europe', category: "Space Blue Offece", image: img7 },
   { name: 'Tokyo', description: 'Japan', category: "Spaceports", image: img8 },
   { name: 'Los Angeles', description: 'United States of America', category: "Spaceports", image: img9 },
   { name: 'Miami', description: 'United States of America', category: "Spaceports", image: img10 },
   { name: 'Dubai', description: 'United Arab Emirates', category: "Spaceports", image: img11 },
   { name: 'Dubai', description: 'United Arab Emirates', category: "Spaceports", image: img12 },
+  { name: 'Cyprus', description: 'Europe', category: "Space EXPO on FXPO", image: img13 },
 ]
 const slide3 = [
-  { name: 'Cyprus', description: 'Europe', category: "Space EXPO on FXPO", image: img13 },
   { name: 'Germany (Ulm)', description: 'Europe', category: "Space Blue Offece", image: img14 },
   { name: 'Tokyo', description: 'Japan', category: "Spaceports", image: img15 },
   { name: 'Los Angeles', description: 'United States of America', category: "Spaceports", image: img16 },

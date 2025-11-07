@@ -189,25 +189,6 @@
 														<ConnectIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
-														<NuxtLink to="/">
-															<p
-																class="text-sm font-medium text-white group-hover:text-gold-light">
-																Lunaprise Mission
-															</p>
-															<p
-																class="text-xs text-gray-400 group-hover:text-white">
-																Lunaprise Metaverse &times; Lunarbits
-															</p>
-														</NuxtLink>
-													</div>
-												</div>
-												<div
-													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-													<div
-														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-														<ConnectIcon class="p-1 w-8 h-auto ml-0" />
-													</div>
-													<div class="pl-3">
 														<NuxtLink to="https://www.spaceblue.club">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
@@ -224,63 +205,6 @@
 													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
 													<div
 														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-														<ConnectIcon class="p-1 w-8 h-auto ml-0" />
-													</div>
-													<div class="pl-3">
-														<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
-															<p
-																class="text-sm font-medium text-white group-hover:text-gold-light">
-																Press, Media & Community
-															</p>
-															<p
-																class="text-xs text-gray-400 group-hover:text-white">
-																Lunaprise &times; FTMV Family
-															</p>
-														</NuxtLink>
-													</div>
-												</div>
-												<div
-													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-													<div
-														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-														<InitiativeIcon class="p-1 w-8 h-auto ml-0" />
-													</div>
-													<div class="pl-3">
-														<NuxtLink to="https://www.futuremultiverse.dev/mission_and_movement">
-															<p
-																class="text-sm font-medium text-white group-hover:text-gold-light">
-																FMV Mission & Movement
-															</p>
-															<p
-																class="text-xs text-gray-400 group-hover:text-white">
-																Core Values & Driving Force
-															</p>
-														</NuxtLink>
-													</div>
-												</div>
-												<div
-													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-													<div
-														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-														<FutureTrendsIcon class="p-1 w-8 h-auto ml-0" />
-													</div>
-													<div class="pl-3">
-														<NuxtLink to="https://www.futuretrendsmatrix.com">
-															<p
-																class="text-sm font-medium text-white group-hover:text-gold-light">
-																Future Trends Group
-															</p>
-															<p
-																class="text-xs text-gray-400 group-hover:text-white">
-																Global Matrix, Influence & Impact
-															</p>
-														</NuxtLink>
-													</div>
-												</div>
-												<div
-													class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-													<div
-														class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
 														<AcadamyIcon class="p-1 w-8 h-auto ml-0" />
 													</div>
 													<div class="pl-3">
@@ -288,11 +212,11 @@
 															to="https://guidebook.lunaprisemetaverse.com">
 															<p
 																class="text-sm font-medium text-white group-hover:text-gold-light">
-																In A Nutshell (LinkTree)
+																Future Trends Multiverse
 															</p>
 															<p
 																class="text-sm text-gray-400 group-hover:text-white">
-																Everything to Learn & Share
+																GuideBook, Media & Partners
 															</p>
 														</NuxtLink>
 													</div>
@@ -826,85 +750,9 @@
 													</NuxtLink>
 												</div>
 											</div>
-											<div
-												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-												<div
-													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-													<ConnectIcon class="p-1 w-8 h-auto ml-0" />
-												</div>
-												<div class="pl-3">
-													<NuxtLink to="https://www.spaceblue.club">
-														<p
-															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
-															Space Blue, Artists, Partners
-														</p>
-														<p
-															class="text-xs text-gray-400 group-hover:text-white">
-															Lunaprise Mission Curator
-														</p>
-													</NuxtLink>
-												</div>
-											</div>
-											<div
-												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-												<div
-													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-													<ConnectIcon class="p-1 w-8 h-auto ml-0" />
-												</div>
-												<div class="pl-3">
-													<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
-														<p
-															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
-															Press, Media & Community
-														</p>
-														<p
-															class="text-xs text-gray-400 group-hover:text-white">
-															Lunaprise &times; FTMV Family
-														</p>
-													</NuxtLink>
-												</div>
-											</div>
 										</li>
 
 										<li class="col-span-1 flex flex-col items-right">
-											<div
-												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-												<div
-													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-													<InitiativeIcon class="p-1 w-8 h-auto ml-0" />
-												</div>
-												<div class="pl-3">
-													<NuxtLink to="https://www.futuremultiverse.dev/mission_and_movement">
-														<p
-															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
-															FMV Mission & Movement
-														</p>
-														<p
-															class="text-xs text-gray-400 group-hover:text-white">
-															Core Values & Driving Force
-														</p>
-													</NuxtLink>
-												</div>
-											</div>
-											<div
-												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
-												<div
-													class="p-1 rounded group-hover:bg-gold-light bg-slate-50">
-													<FutureTrendsIcon class="p-1 w-8 h-auto ml-0" />
-												</div>
-												<div class="pl-3">
-													<NuxtLink to="https://www.futuretrendsmatrix.com">
-														<p
-															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
-															Future Trends Group
-														</p>
-														<p
-															class="text-xs text-gray-400 group-hover:text-white">
-															Global Matrix, Influence & Impact
-														</p>
-													</NuxtLink>
-												</div>
-											</div>
 											<div
 												class="flex items-center hover:bg-custom-dark p-2 rounded-[10px] group">
 												<div
@@ -915,11 +763,11 @@
 													<NuxtLink to="https://guidebook.lunaprisemetaverse.com">
 														<p
 															class="text-sm text-gray-700 font-bold dark:text-white group-hover:text-gold-light">
-															In A Nutshell (LinkTree)
+															Future Trends Multiverse
 														</p>
 														<p
 															class="text-sm text-gray-400 group-hover:text-white">
-															Everything to Learn & Share
+															GuideBook, Media & Partners
 														</p>
 													</NuxtLink>
 												</div>

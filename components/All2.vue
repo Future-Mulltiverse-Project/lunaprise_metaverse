@@ -85,67 +85,79 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, toRefs, computed, watch } from 'vue';
+import { ref, onMounted, onBeforeUnmount, toRefs, computed, watch, nextTick } from 'vue'
 
 interface CardType {
-  image: string;
-  name: string;
-  description: string;
-  category: string;
+  image: string; name: string; description: string; category: string;
 }
 
 const props = defineProps({
-  selectedItem: {
-    type: String,
-    default: "",
-  },
-  cards: {
-    type: Array as () => CardType[],
-    default: () => []
-  }
-});
+  selectedItem: { type: String, default: '' },
+  cards: { type: Array as () => CardType[], default: () => [] }
+})
 
-const { selectedItem, cards } = toRefs(props);
+const { selectedItem, cards } = toRefs(props)
 
 const filteredCards = computed(() => {
-  if (selectedItem.value === "All" || !selectedItem.value) return cards.value;
-  return cards.value.filter(
-    (card: any) => card.category.toLowerCase() === selectedItem.value.toLowerCase()
-  );
-});
+  if (selectedItem.value === 'All' || !selectedItem.value) return cards.value
+  return cards.value.filter(c => c.category?.toLowerCase() === selectedItem.value.toLowerCase())
+})
 
+const cardSlider = ref<HTMLElement | null>(null)
+let animationFrameId = 0
+let running = true
 
-const cardSlider = ref<HTMLElement | null>(null);
-let animationFrameId: number;
-
+// Move LEFT->RIGHT: begin at -halfWidth and increase to 0, then snap to -halfWidth
 const startSliderAnimation = (sliderRef: HTMLElement | null) => {
-  if (!sliderRef) return;
+  if (!sliderRef) return
 
-  let position = 0;
-  const speed = 1.5;
+  const halfWidth = sliderRef.scrollWidth / 2
+  let x = -halfWidth
 
-  const animate = () => {
-    position -= speed;
-    if (Math.abs(position) >= sliderRef.scrollWidth / 2) {
-      position = 0;
+  // use RAF delta for smooth constant velocity across refresh rates
+  const pxPerSec = 100 // adjust overall speed here
+  let last = performance.now()
+
+  const tick = (now: number) => {
+    if (!running) {
+      animationFrameId = requestAnimationFrame(tick)
+      return
     }
-    sliderRef.style.transform = `translateX(${position}px)`;
-    animationFrameId = requestAnimationFrame(animate);
-  };
 
-  cancelAnimationFrame(animationFrameId); // Clear any previous animation
-  animate();
-};
+    const dt = (now - last) / 1000
+    last = now
 
-onMounted(() => {
-  startSliderAnimation(cardSlider.value);
-});
+    x += pxPerSec * dt // move to the right
+    if (x >= 0) x = -halfWidth // loop
 
-// Restart animation when filteredCards change
-watch(filteredCards, () => {
-  startSliderAnimation(cardSlider.value);
-});
+    sliderRef.style.transform = `translate3d(${x}px,0,0)`
+    animationFrameId = requestAnimationFrame(tick)
+  }
+
+  cancelAnimationFrame(animationFrameId)
+  animationFrameId = requestAnimationFrame(tick)
+}
+
+onMounted(async () => {
+  await nextTick()
+  startSliderAnimation(cardSlider.value)
+})
+
+// Restart animation whenever the content changes size
+watch(filteredCards, async () => {
+  await nextTick()
+  startSliderAnimation(cardSlider.value)
+})
+
+onBeforeUnmount(() => {
+  cancelAnimationFrame(animationFrameId)
+})
+
+// (optional) pause on hover
+const onEnter = () => (running = true)   // change to false to pause on hover
+const onLeave = () => (running = true)
 </script>
+
 
 <style lang="scss" module>
 .section {
