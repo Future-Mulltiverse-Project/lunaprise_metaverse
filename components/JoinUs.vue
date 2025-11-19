@@ -9,17 +9,17 @@
           Join Us LIVE
         </h2>
         <div class="flex flex-col lg:flex-row justify-center items-center py-8 lg:space-x-4 text-lg">
-          <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
+          <button   @click.prevent="handleRegisterInvitation" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
             Register to receive your Invitation
-          </NuxtLink>
+          </button>
         </div>
         <h2 class="text-black text-center text-[2rem]  lg:text-5xl font-bold">
           LIVE BROADCAST<br /> Online <span class="font-medium">on X.com</span>
         </h2>
         <div class="flex flex-col lg:flex-row justify-center items-center py-8 lg:space-x-4 text-lg">
-          <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
+          <button  @click.prevent="handleRegisterInvitation" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
             Register to receive your Invitation
-          </NuxtLink>
+          </button>
         </div>
         <h2 class="text-black text-center text-[2rem]  lg:text-5xl font-medium">
             <span class="font-bold">LIVE</span> in Miami, LA, Dubai,<br /> Tokyo, Germany & Cyprus:
@@ -51,9 +51,9 @@
       </div>
         </section>
         <div class="flex flex-col lg:flex-row justify-center items-center pt-10 lg:space-x-4 text-lg">
-          <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
+          <button  @click.prevent="handleRegisterInvitation" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
             Register to receive your Invitation
-          </NuxtLink>
+          </button>
         </div>
         <section class="relative max-w-7xl mx-auto pt-8">
             <!-- Left Black Fade Effect -->
@@ -64,9 +64,9 @@
         </section>
         <Slider />
         <div class="flex flex-col lg:flex-row justify-center items-center py-8 lg:space-x-4 text-lg">
-          <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
+          <button  @click.prevent="handleRegisterInvitation" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
             Register to receive your Invitation
-          </NuxtLink>
+          </button>
         </div>
     </section>
 </template>
@@ -140,6 +140,18 @@ const countries = [
    function  handleError() {
       error.value = true;
     }
+
+    const { $openChat } = useNuxtApp()
+
+const handleRegisterInvitation = () => {
+  // Preferred Nuxt way
+  $openChat()
+
+  // Or, if you prefer to follow RYU.md literally:
+  // if (window.$chatWidget?.openChat) {
+  //   window.$chatWidget.openChat()
+  // }
+}
 </script>
 <style lang="scss" module>
 /* Left and Right Black Fading Effect */

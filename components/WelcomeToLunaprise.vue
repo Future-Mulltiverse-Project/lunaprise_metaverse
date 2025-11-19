@@ -47,9 +47,9 @@
           </div>
         </div>
         <div class="flex flex-col lg:flex-row justify-center items-center py-8 lg:space-x-4 text-lg">
-          <NuxtLink to=""  @click.prevent="$emit('showResults')" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
+          <button  @click.prevent="handleRegisterInvitation" class="bg-[#cfb16d] p-2 text-white cursor-pointer text-sm rounded-lg border-2 border-gold-light">
             Register to receive your Invitation
-          </NuxtLink>
+          </button>
         </div>
         <p class="text-center text-[#707070] text-sm lg:text-lg max-w-5xl mx-auto pb-8">
           The Lunaprise Metaverse is the multidimensional alliance between the Lunaprise Mission & Museum, and the Future Trends Multiverse, bridging Earth, Moon, Mars & the Multiverse through the power of Web4 innovation & space technology. By converging Hyper-Real 3D/XR, AI, Blockchain, and Space infrastructure & assets, it unites art, science, and humanity into a living singularity— empowering pioneers across the world to create, connect, and leave a lasting legacy among the stars.
@@ -63,6 +63,18 @@
 
   const videoContainer = ref<HTMLElement | null>(null);
   useYoutubeAutoPlayOnView('ytplayer', videoContainer);
+
+  const { $openChat } = useNuxtApp()
+
+const handleRegisterInvitation = () => {
+  // Preferred Nuxt way
+  $openChat()
+
+  // Or, if you prefer to follow RYU.md literally:
+  // if (window.$chatWidget?.openChat) {
+  //   window.$chatWidget.openChat()
+  // }
+}
   
   </script>
   

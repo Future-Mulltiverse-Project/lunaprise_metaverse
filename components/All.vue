@@ -105,6 +105,18 @@ const props = defineProps({
   }
 });
 
+const { $openChat } = useNuxtApp()
+
+const handleRegisterInvitation = () => {
+  // Preferred Nuxt way
+  $openChat()
+
+  // Or, if you prefer to follow RYU.md literally:
+  // if (window.$chatWidget?.openChat) {
+  //   window.$chatWidget.openChat()
+  // }
+}
+
 const { selectedItem, cards } = toRefs(props);
 
 const filteredCards = computed(() => {
